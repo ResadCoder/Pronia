@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-rS1AoQ6QeWlAvTqV1YYyGrGyfVqDQmx\u002BascQD9qtU1U="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"630680"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022rS1AoQ6QeWlAvTqV1YYyGrGyfVqDQmx\u002BascQD9qtU1U=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Jul 2025 20:24:16 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Pronia/admin/css/style.axp1wrvtwg.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\css\style.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"axp1wrvtwg"},{"Name":"integrity","Value":"sha256-gipbERCd9JmDCT6U1o0I8ylWVZ8JJx\u002B2eMa8LLP1Hcs="},{"Name":"label","Value":"_content/Pronia/admin/css/style.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"684843"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gipbERCd9JmDCT6U1o0I8ylWVZ8JJx\u002B2eMa8LLP1Hcs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Jul 2025 20:24:16 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pronia/admin/css/style.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\css\style.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gipbERCd9JmDCT6U1o0I8ylWVZ8JJx\u002B2eMa8LLP1Hcs="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"684843"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gipbERCd9JmDCT6U1o0I8ylWVZ8JJx\u002B2eMa8LLP1Hcs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Jul 2025 20:24:16 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fp\u002B1lEmng/j2FlWIGESsqzMNC63DneBGqUR4Oi8Noz8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"684845"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022fp\u002B1lEmng/j2FlWIGESsqzMNC63DneBGqUR4Oi8Noz8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Jul 2025 05:17:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Pronia/admin/css/style.y8ov0lqvf1.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\css\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"y8ov0lqvf1"},{"Name":"integrity","Value":"sha256-fp\u002B1lEmng/j2FlWIGESsqzMNC63DneBGqUR4Oi8Noz8="},{"Name":"label","Value":"_content/Pronia/admin/css/style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"684845"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022fp\u002B1lEmng/j2FlWIGESsqzMNC63DneBGqUR4Oi8Noz8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Jul 2025 05:17:44 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pronia/admin/fonts/Roboto/Roboto-Black.6rl6scj3id.ttf">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\fonts\Roboto\Roboto-Black.ttf'))</AssetFile>

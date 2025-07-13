@@ -35,11 +35,11 @@ public class Program
         app.UseStaticFiles();
         
         app.MapControllerRoute(
-            name: "default",
+            name: "manage",
             pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
         
         app.MapControllerRoute(
-            name: "manage",
+            name: "default",
             pattern: "{controller=Home}/{action=Index}/{id?}");
       
         

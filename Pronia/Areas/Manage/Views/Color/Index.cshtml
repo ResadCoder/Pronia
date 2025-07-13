@@ -1,0 +1,52 @@
+@model List<Color>
+@{ int count = 0; }
+
+<div class="col-lg-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Categories</h4>
+            <a asp-controller="Color" asp-action="Create" class="btn btn-success">Create New Color</a>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Color</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var color in Model)
+                    {
+                        count++;
+                        <tr>
+                            <td>
+                                @count
+                            </td>
+                            <td>
+                                @color.Name
+                            </td>
+                            <td>
+                                <a asp-controller="Color" asp-action="Update" asp-route-id="@color.Id" class="btn bg-warning"><i class="mdi mdi-pencil"></i></a>
+                                <a asp-controller="Color" asp-action="Delete" asp-route-id="@color.Id" class="btn bg-danger"><i class="mdi mdi-delete"></i></a>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+@if (TempData["Success"] != null)
+{
+    <script>
+        Swal.fire({
+            text: "@TempData["Success"]",
+            icon: "success"
+        });
+    </script>
+}

@@ -81,7 +81,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Areas\Manage\ViewModels\" />
       <Folder Include="Migrations\" />
       <Folder Include="wwwroot\admin\" />
     </ItemGroup>

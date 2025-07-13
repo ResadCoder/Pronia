@@ -184,7 +184,6 @@
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/88kl2n3nmx-vym5gtvy3q.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/t79udutfci-3miorns7cl.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/a9fd21vseh-95fg99dp2p.gz
-/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/ha2bfd8ba5-axp1wrvtwg.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/nyhat411f7-gy2eaz05jq.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/yzna5px4nf-vp8y716agw.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/91cl6dwcgp-jj9zav7up5.gz
@@ -826,3 +825,5 @@
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/ofvridy46a-of12tq21qk.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/jzu69aofyx-islyxa57bt.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/x99u76czzs-xx02ztqvw3.gz
+/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/Pronia.sourcelink.json
+/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/ha2bfd8ba5-y8ov0lqvf1.gz
