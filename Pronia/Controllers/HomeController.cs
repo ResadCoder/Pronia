@@ -19,7 +19,10 @@ public class HomeController : Controller
 
     public async Task<IActionResult> Index()
     {
-        var slides = await _context.Slides.OrderBy(s => s.Id).ToListAsync();
+        var slides = await _context.Slides
+            .Where(s => s.ShowSlide == true)
+            .OrderBy(s => s.Id)
+            .ToListAsync();
         var cards = await _context.Cards.ToListAsync();
         var categories = await _context.Categories.ToListAsync();
         var reviews = await GetReviewsAsync();
@@ -86,6 +89,7 @@ public class HomeController : Controller
                     ImgPath = i.ImgPath,
                     PositionEnum = i.PositionEnum
                 }).ToList()
+                
             })
             .ToListAsync();
     }

@@ -90,14 +90,14 @@ public class ColorController : Controller
         {
             if (await _context.Colors.AnyAsync(c => c.Name.ToLower() == vm.Name.ToLower()))
             {
-                ModelState.AddModelError(nameof(vm.Name), "Category already exists");
+                ModelState.AddModelError(nameof(vm.Name), "Color already exists");
                 return View();
             }
-            vm.Name = color.Name;
+            color.Name = vm.Name;
             await _context.SaveChangesAsync();
-            TempData["Success"] = "Category updated successfully";
+            TempData["Success"] = "Color updated successfully";
         }
-        return View(vm);
+        return RedirectToAction(nameof(Index));
     }
 
     public async Task<IActionResult> Delete(int id)

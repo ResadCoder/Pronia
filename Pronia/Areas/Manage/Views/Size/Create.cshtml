@@ -1,0 +1,20 @@
+@model Pronia.Areas.Manage.ViewModels.Size.SizeCreateVM
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Size</h4>
+            <form class="forms-sample" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="Name"></label>
+                    <input asp-for = "Name" type="text"  class="form-control"  placeholder="Name">
+                    <span class="text-danger  pt-2  fs-6 small  fw-light" asp-validation-for="Name"></span>
+                </div>
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                <a asp-controller="Size" asp-action="Index" class="btn btn-light">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

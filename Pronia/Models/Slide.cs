@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Pronia.Models;
 
 
@@ -16,5 +18,10 @@ namespace Pronia.Models;
         public int Order { get; set; } 
         
         public string ImagePath { get; set; } = null!;
+        
+        public bool ShowSlide { get; set; } = false;
+        
+        [NotMapped]
+        public IFormFile Photo { get; set; } = null!;
 
     }

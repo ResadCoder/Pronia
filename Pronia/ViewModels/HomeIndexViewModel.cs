@@ -21,5 +21,9 @@ public class HomeIndexViewModel
     public List<ProductColor> ProductColors { get; set; } = new List<ProductColor>();
     
     public List<Color> Colors { get; set; } = new List<Color>();
+    
+    public List<ProductSize> ProductSizes { get; set; } = new List<ProductSize>();
+    
+    public  List<Size> Sizes { get; set; } = new List<Size>();
 
 }

@@ -1,0 +1,76 @@
+@model  List<Slide>
+
+
+<div class="col-lg-6 grid-margin stretch-card">
+  <div class="card"style="max-width: 2300px; margin: auto;">
+    <div class="card-body" style="max-width: 2300px; margin: auto;" >
+      <h4 class="card-title">Categories</h4>
+      <a asp-controller="Slide" asp-action="Create" class="btn btn-success">Create Slide</a>
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>Order</th>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Subtitle</th>
+            <th>Visibility</th>
+            <th>Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+          @foreach (Slide slide in Model)
+          {
+            <tr>
+              <td>
+                @slide.Order
+              </td>
+              <td>
+                <img src="~/assets/images/slider/@slide.ImagePath" alt=""/>
+                
+              </td>
+              <td>
+                @slide.Title
+              </td>
+              <td>
+                @slide.Description
+              </td>
+              <td>
+                @slide.Subtitle
+              </td>
+              <td>
+                @slide.ShowSlide
+              </td>
+              <td>
+                <a asp-controller="Slide" asp-action="Update" asp-route-id="@slide.Id" class="btn bg-warning"><i class="mdi mdi-pencil"></i></a>
+              <a asp-controller="Slide" asp-action="Delete" asp-route-id="@slide.Id" class="btn bg-danger"><i class="mdi mdi-delete"></i></a>
+              </td>
+            </tr>
+          }
+         
+          </tbody>
+        </table>
+                    
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .table th, .table td {
+      padding: 50px 50px;
+      vertical-align: middle;
+  }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+@if (TempData["Success"] != null)
+{
+  <script>
+        Swal.fire({
+            text: "@TempData["Success"]",
+            icon: "success"
+        });
+    </script>
+}

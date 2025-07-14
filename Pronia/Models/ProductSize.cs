@@ -1,6 +1,6 @@
 namespace Pronia.Models;
 
-public class ProductColor
+public class ProductSize
 {
     public int Id { get; set; }
     
@@ -8,6 +8,6 @@ public class ProductColor
     
     public Product Product { get; set; }
     
-    public int ColorId { get; set; }
-    public Color Color { get; set; }
+    public int SizeId { get; set; }
+    public Size Size { get; set; }
 }

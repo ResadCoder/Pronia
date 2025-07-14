@@ -103,9 +103,11 @@
                   <div class="selector-wrap size-option">
                     <span class="selector-title">Size</span>
                     <select class="nice-select wide rounded-0">
-                      <option value="medium">Medium Size & Poot</option>
-                      <option value="large">Large Size With Poot</option>
-                      <option value="small">Small Size With Poot</option>
+                      <option selected disabled value="default">--select size--</option>
+                      @foreach (var ps in Model.ProductSizes)
+                      {
+                        <option>@ps.Size.Name</option>
+                      }
                     </select>
                   </div>
                   <p class="short-desc">

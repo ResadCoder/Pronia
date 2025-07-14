@@ -29,6 +29,8 @@ public class ProductController : Controller
          .Include(p => p.Category)
          .Include(p => p.ProductColors)
             .ThenInclude(pc => pc.Color)
+         .Include(p => p.ProductSizes)
+            .ThenInclude(ps => ps.Size)
          .FirstOrDefaultAsync(p => p.Id == id);
       if (product == null)
       {

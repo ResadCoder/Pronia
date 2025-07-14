@@ -9,4 +9,6 @@ public class ProductViewModel
     public decimal Price { get; set; }
     
     public List<ProductImageViewModel> Images { get; set; } = new List<ProductImageViewModel>();
+    
+    
 }

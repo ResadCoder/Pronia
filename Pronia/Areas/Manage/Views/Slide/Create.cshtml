@@ -1,0 +1,48 @@
+@model Pronia.Areas.Manage.ViewModels.Slide.SlideCreateVM
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Slides</h4>
+            <form class="forms-sample" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="Order"></label>
+                    <input asp-for = "Order" type="number"  class="form-control"  placeholder="Order">
+                    <span class="text-danger  pt-2  fs-6 small  fw-light" asp-validation-for="Order"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Photo"></label>
+                    <input asp-for = "Photo"  class="form-control"  placeholder="Photo" accept="image/*">
+                    <span class="text-danger pt-2  fs-6 small  fw-light" asp-validation-for="Photo"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Title"></label>
+                    <input asp-for = "Title"  class="form-control"  placeholder="Title">
+                    <span class="text-danger pt-2  fs-6 small  fw-light" asp-validation-for="Title"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description"></label>
+                    <input asp-for = "Description"  class="form-control"  placeholder="Description">
+                    <span class="text-danger pt-2  fs-6 small  fw-light" asp-validation-for="Description"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Subtitle"></label>
+                    <input asp-for = "Subtitle"  class="form-control"  placeholder="Subtitle">
+                    <span class="text-danger pt-2  fs-6 small  fw-light" asp-validation-for="Subtitle"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ShowSlide"></label>
+                    <select asp-for="ShowSlide" class="form-control" placeholder="ShowSlide">
+                        <option value="false">No</option>
+                        <option value="true">Yes</option>
+                    </select>
+                    <span class="text-danger pt-2 fs-6 small fw-light" asp-validation-for="ShowSlide"></span>
+                </div>
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                <a asp-controller="Slide" asp-action="Index" class="btn btn-light">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
