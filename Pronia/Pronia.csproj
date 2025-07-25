@@ -82,7 +82,7 @@
 
     <ItemGroup>
       <Folder Include="Migrations\" />
-      <Folder Include="wwwroot\admin\" />
+      <Folder Include="wwwroot\admin\media\products\" />
     </ItemGroup>
 
     <ItemGroup>

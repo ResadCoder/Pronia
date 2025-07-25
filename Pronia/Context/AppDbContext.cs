@@ -28,23 +28,5 @@ public class AppDbContext: DbContext
     public DbSet<ProductColor> ProductColors { get; set; }
     
     public DbSet<ProductSize> ProductSizes { get; set; }
-    
-    // protected override void OnModelCreating(ModelBuilder modelBuilder)
-    // {
-    //     // ProductColor - Product əlaqəsi (cascade)
-    //     modelBuilder.Entity<ProductColor>()
-    //         .HasOne(pc => pc.Product)
-    //         .WithMany(p => p.ProductColors)
-    //         .HasForeignKey(pc => pc.ProductId)
-    //         .OnDelete(DeleteBehavior.Cascade); // Yəni product silinsə, əlaqələri sil
-    //
-    //     // ProductColor - Color əlaqəsi (cascade)
-    //     modelBuilder.Entity<ProductColor>()
-    //         .HasOne(pc => pc.Color)
-    //         .WithMany(c => c.ProductColors)
-    //         .HasForeignKey(pc => pc.ColorId)
-    //         .OnDelete(DeleteBehavior.Cascade); // Yəni color silinsə, əlaqələri sil
-    //
-    //     base.OnModelCreating(modelBuilder);
-    // }
+
 }

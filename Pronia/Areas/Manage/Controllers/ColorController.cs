@@ -8,14 +8,9 @@ using Pronia.ViewModels;
 namespace Pronia.Areas.Manage.Controllers;
 
 [Area("Manage")]
-public class ColorController : Controller
+public class ColorController(AppDbContext context) : Controller
 {
-    private readonly AppDbContext _context;
-
-    public ColorController(AppDbContext context)
-    {
-        _context = context;
-    }
+    private readonly AppDbContext _context = context;
 
     public async Task<IActionResult> Index()
     {

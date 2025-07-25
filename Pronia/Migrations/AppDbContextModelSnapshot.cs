@@ -51,7 +51,7 @@ namespace Pronia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Blogs", (string)null);
+                    b.ToTable("Blogs");
                 });
 
             modelBuilder.Entity("Pronia.Models.Card", b =>
@@ -76,7 +76,7 @@ namespace Pronia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cards", (string)null);
+                    b.ToTable("Cards");
                 });
 
             modelBuilder.Entity("Pronia.Models.Category", b =>
@@ -93,7 +93,7 @@ namespace Pronia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories", (string)null);
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("Pronia.Models.Color", b =>
@@ -110,7 +110,7 @@ namespace Pronia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Colors", (string)null);
+                    b.ToTable("Colors");
                 });
 
             modelBuilder.Entity("Pronia.Models.Product", b =>
@@ -127,6 +127,9 @@ namespace Pronia.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("Discount")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -141,7 +144,7 @@ namespace Pronia.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products", (string)null);
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("Pronia.Models.ProductColor", b =>
@@ -164,7 +167,7 @@ namespace Pronia.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductColors", (string)null);
+                    b.ToTable("ProductColors");
                 });
 
             modelBuilder.Entity("Pronia.Models.ProductImage", b =>
@@ -189,7 +192,7 @@ namespace Pronia.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductImages", (string)null);
+                    b.ToTable("ProductImages");
                 });
 
             modelBuilder.Entity("Pronia.Models.ProductSize", b =>
@@ -212,7 +215,7 @@ namespace Pronia.Migrations
 
                     b.HasIndex("SizeId");
 
-                    b.ToTable("ProductSizes", (string)null);
+                    b.ToTable("ProductSizes");
                 });
 
             modelBuilder.Entity("Pronia.Models.Review", b =>
@@ -236,7 +239,7 @@ namespace Pronia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Reviews", (string)null);
+                    b.ToTable("Reviews");
                 });
 
             modelBuilder.Entity("Pronia.Models.Size", b =>
@@ -253,7 +256,7 @@ namespace Pronia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sizes", (string)null);
+                    b.ToTable("Sizes");
                 });
 
             modelBuilder.Entity("Pronia.Models.Slide", b =>
@@ -263,10 +266,6 @@ namespace Pronia.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("ButtonText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -291,7 +290,7 @@ namespace Pronia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Slides", (string)null);
+                    b.ToTable("Slides");
                 });
 
             modelBuilder.Entity("Pronia.Models.Product", b =>
@@ -327,7 +326,7 @@ namespace Pronia.Migrations
             modelBuilder.Entity("Pronia.Models.ProductImage", b =>
                 {
                     b.HasOne("Pronia.Models.Product", "Product")
-                        .WithMany("Images")
+                        .WithMany("ProductImages")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -366,9 +365,9 @@ namespace Pronia.Migrations
 
             modelBuilder.Entity("Pronia.Models.Product", b =>
                 {
-                    b.Navigation("Images");
-
                     b.Navigation("ProductColors");
+
+                    b.Navigation("ProductImages");
 
                     b.Navigation("ProductSizes");
                 });

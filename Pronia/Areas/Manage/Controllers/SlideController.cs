@@ -2,7 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pronia.Areas.Manage.ViewModels.Slide;
 using Pronia.Context;
+using Pronia.Extensions;
 using Pronia.Models;
+using Pronia.Utilities;
+using Pronia.ViewModels.Home;
 
 namespace Pronia.Areas.Manage.Controllers;
 
@@ -32,25 +35,26 @@ public class SlideController : Controller
     public async Task<IActionResult> Create(SlideCreateVM vm)
     {
         if (!ModelState.IsValid) return View();
-        if (!vm.Photo.ContentType.Contains("image/"))
+        if (!vm.Photo.ValidateFileType(FileTypeEnum.Image))
         {
             ModelState.AddModelError(nameof(vm.Photo), "Please provide a valid file format(img)");
             return View();
         }
 
-        if (vm.Photo.Length > 1024 * 1024 * 2)
+        const long size = 2; 
+        const FileSizeEnum sizeType = FileSizeEnum.Mb;
+        if (vm.Photo.ValidateFileSize(size,sizeType))
         {
-            ModelState.AddModelError(nameof(vm.Photo), "Please provide a valid file length ,size must be less than 2MB");
+            ModelState.AddModelError(nameof(vm.Photo), $"Please provide a valid file length ,size must be less than {size} {sizeType.ToString().ToUpper()}");
             return View();
         }
+        
         if (await _context.Slides.AnyAsync(s => s.Order == vm.Order))
         {
-            ModelState.AddModelError("Order", "Order already exists");
+            ModelState.AddModelError(nameof(vm.Order), "Order already exists");
             return View();
         }
-
-        FileStream fileStream = new FileStream(Path.Combine("/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider",vm.Photo.FileName),FileMode.Create);
-        await  vm.Photo.CopyToAsync(fileStream);
+        
         
 
         Slide slide = new Slide()
@@ -59,9 +63,8 @@ public class SlideController : Controller
             Order = vm.Order,
             Title = vm.Title,
             Description = vm.Description,
-            ImagePath = vm.Photo.FileName,
-            Subtitle = vm.Subtitle,
-            ButtonText = "Disvover now"
+            ImagePath = await vm.Photo.CreateFileAsync(_environment.WebRootPath, "assets","images","slider"),
+            Subtitle = vm.Subtitle
         };
         
         await _context.Slides.AddAsync(slide);
@@ -71,7 +74,6 @@ public class SlideController : Controller
         return RedirectToAction(nameof(Index));
        
     }
-
     
     public async Task<IActionResult> Delete(int id)
     {
@@ -81,15 +83,89 @@ public class SlideController : Controller
         
         if (slide == null) return NotFound();
         
-        System.IO.File.Delete(_environment.WebRootPath +"/assets/images/slider/" +slide.ImagePath);
+        slide.ImagePath.DeleteFile(_environment.WebRootPath, "assets", "images", "slider");
         
         _context.Slides.Remove(slide);
         
         await _context.SaveChangesAsync();
         
         return RedirectToAction(nameof(Index));
-        
     }
+
     
+    public async Task<IActionResult> Update(int id)
+    {
+        if (id <= 0) return BadRequest();
+        Slide? slide = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
+        if (slide == null) return NotFound();
+
+        SlideUpdateVM vm = new SlideUpdateVM()
+        {
+            Order = slide.Order,
+            Title = slide.Title,
+            Description = slide.Description,
+            ImagePath = slide.ImagePath,
+            Subtitle = slide.Subtitle,
+            ShowSlide = slide.ShowSlide
+        };
+        
+        return View (vm);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Update(int id, SlideUpdateVM vm)
+    {
+        if (id <= 0) return BadRequest();
+        
+        
+        Slide? slide = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
+        if (slide == null) return NotFound();
+        vm.ImagePath = slide.ImagePath;
+        if (!ModelState.IsValid) return View(vm);
+        
+     
+        
+        if (vm.Photo != null)
+        {
+            if (!vm.Photo.ValidateFileType(FileTypeEnum.Image))
+            {
+                ModelState.AddModelError(nameof(vm.Photo), "Please provide a valid file format(img)");
+                return View(vm);
+            }
+
+            const long size = 2;
+            const FileSizeEnum sizeType = FileSizeEnum.Mb;
+            if (vm.Photo.ValidateFileSize(size, sizeType))
+            {
+                ModelState.AddModelError(nameof(vm.Photo),
+                    $"Please provide a valid file length, size must be less than {size} {sizeType.ToString().ToUpper()}");
+                return View(vm);
+            }
+
+        }
+        
+        if (await _context.Slides.AnyAsync(s => s.Order == vm.Order && s.Id != id))
+        {
+            ModelState.AddModelError(nameof(vm.Order), "Order already exists");
+            return View(vm);
+        }
+        
+        
+        if (vm.Photo != null)
+        {
+            slide.ImagePath.DeleteFile(_environment.WebRootPath, "assets", "images", "slider");
+            slide.ImagePath = await vm.Photo.CreateFileAsync(_environment.WebRootPath, "assets", "images", "slider");
+        }
+
+        slide.Subtitle = vm.Subtitle;
+        slide.ShowSlide = vm.ShowSlide;
+        slide.Order = vm.Order;
+        slide.Title = vm.Title;
+        slide.Description = vm.Description;
+        
+
+        await _context.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
+    }
     
 }

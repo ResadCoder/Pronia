@@ -15,12 +15,14 @@ public class Product
     
     public int CategoryId { get; set; }
     
+    public decimal Discount { get; set; }
+    
     public Category Category { get; set; }
     
-    public List<ProductImage> Images { get; set; } = new List<ProductImage>();
+    public List<ProductImage> ProductImages { get; set; } = new List<ProductImage>();
     
-    public List<ProductColor> ProductColors { get; set; } = new List<ProductColor>();
+    public List<ProductColor> Colors { get; set; } = new List<ProductColor>();
     
-    public List<ProductSize> ProductSizes { get; set; } = new List<ProductSize>();
+    public List<ProductSize> Sizes { get; set; } = new List<ProductSize>();
     
 }

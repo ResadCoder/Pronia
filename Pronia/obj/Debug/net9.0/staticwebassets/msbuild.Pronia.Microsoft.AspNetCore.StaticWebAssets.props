@@ -4248,6 +4248,96 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\js\x-editable.js'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\media\products\254188b2-e758-452d-b7e7-be90cdbccd26.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Pronia</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Pronia</BasePath>
+      <RelativePath>admin/media/products/254188b2-e758-452d-b7e7-be90cdbccd26.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>arp987lwle</Fingerprint>
+      <Integrity>WkGwO++RJLKtdyDoGDcIqcBjf7RznhgWIM+GfY5yhBE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\media\products\254188b2-e758-452d-b7e7-be90cdbccd26.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\media\products\263f85b5-5032-423b-ae05-429a707be2b6.webp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Pronia</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Pronia</BasePath>
+      <RelativePath>admin/media/products/263f85b5-5032-423b-ae05-429a707be2b6.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xd59y6fljf</Fingerprint>
+      <Integrity>exJ2FEt2jze3XdjFphazOnuW14IZazYl4y1NnMa1N6A=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\media\products\263f85b5-5032-423b-ae05-429a707be2b6.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\media\products\55f4c56c-de29-45a1-b798-322a5700e5a9.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Pronia</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Pronia</BasePath>
+      <RelativePath>admin/media/products/55f4c56c-de29-45a1-b798-322a5700e5a9.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>slnpbejs8h</Fingerprint>
+      <Integrity>wFZ6CVfLaPtR4dJ0GC1tAqWYGjg2Dw8S5okOtLMiM0Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\media\products\55f4c56c-de29-45a1-b798-322a5700e5a9.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\media\products\d36f98ba-cad2-446a-b585-743b9d9d28b8.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Pronia</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Pronia</BasePath>
+      <RelativePath>admin/media/products/d36f98ba-cad2-446a-b585-743b9d9d28b8.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>nyifh48znk</Fingerprint>
+      <Integrity>QXFE9fAt2H+MQpqKF49xAPlK1HeLPK2CMSDbeg1sQ6E=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\media\products\d36f98ba-cad2-446a-b585-743b9d9d28b8.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\media\products\ed6843d6-051d-4868-bf34-b63355c71787.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Pronia</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Pronia</BasePath>
+      <RelativePath>admin/media/products/ed6843d6-051d-4868-bf34-b63355c71787.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>2cu2un1xia</Fingerprint>
+      <Integrity>EvBmS7rL7HNjWzWWdgam4MHMwDy0150kV+uemu63Z80=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\media\products\ed6843d6-051d-4868-bf34-b63355c71787.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\admin\vendors\chart.js\chart.umd.js'))">
       <SourceType>Package</SourceType>
       <SourceId>Pronia</SourceId>
@@ -16397,6 +16487,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\sidebar\banner\1-270x300.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\slider\a1fa3283-0aaa-4cda-8c6c-e88c0722a3c9.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Pronia</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Pronia</BasePath>
+      <RelativePath>assets/images/slider/a1fa3283-0aaa-4cda-8c6c-e88c0722a3c9.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>slnpbejs8h</Fingerprint>
+      <Integrity>wFZ6CVfLaPtR4dJ0GC1tAqWYGjg2Dw8S5okOtLMiM0Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\slider\a1fa3283-0aaa-4cda-8c6c-e88c0722a3c9.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\slider\b8ba3469-fd67-4b0d-9d32-959740e5bf35.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Pronia</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Pronia</BasePath>
+      <RelativePath>assets/images/slider/b8ba3469-fd67-4b0d-9d32-959740e5bf35.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>2cu2un1xia</Fingerprint>
+      <Integrity>EvBmS7rL7HNjWzWWdgam4MHMwDy0150kV+uemu63Z80=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\slider\b8ba3469-fd67-4b0d-9d32-959740e5bf35.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\slider\bg\1-1.jpg'))">
       <SourceType>Package</SourceType>

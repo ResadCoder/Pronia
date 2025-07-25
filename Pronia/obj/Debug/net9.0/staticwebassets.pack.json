@@ -945,6 +945,26 @@
       "PackagePath": "staticwebassets/admin/js/x-editable.js"
     },
     {
+      "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/254188b2-e758-452d-b7e7-be90cdbccd26.jpg",
+      "PackagePath": "staticwebassets/admin/media/products/254188b2-e758-452d-b7e7-be90cdbccd26.jpg"
+    },
+    {
+      "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/263f85b5-5032-423b-ae05-429a707be2b6.webp",
+      "PackagePath": "staticwebassets/admin/media/products/263f85b5-5032-423b-ae05-429a707be2b6.webp"
+    },
+    {
+      "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/55f4c56c-de29-45a1-b798-322a5700e5a9.png",
+      "PackagePath": "staticwebassets/admin/media/products/55f4c56c-de29-45a1-b798-322a5700e5a9.png"
+    },
+    {
+      "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/d36f98ba-cad2-446a-b585-743b9d9d28b8.png",
+      "PackagePath": "staticwebassets/admin/media/products/d36f98ba-cad2-446a-b585-743b9d9d28b8.png"
+    },
+    {
+      "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/ed6843d6-051d-4868-bf34-b63355c71787.png",
+      "PackagePath": "staticwebassets/admin/media/products/ed6843d6-051d-4868-bf34-b63355c71787.png"
+    },
+    {
       "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/vendors/chart.js/chart.umd.js",
       "PackagePath": "staticwebassets/admin/vendors/chart.js/chart.umd.js"
     },
@@ -3643,6 +3663,14 @@
     {
       "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/sidebar/banner/1-270x300.jpg",
       "PackagePath": "staticwebassets/assets/images/sidebar/banner/1-270x300.jpg"
+    },
+    {
+      "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/a1fa3283-0aaa-4cda-8c6c-e88c0722a3c9.png",
+      "PackagePath": "staticwebassets/assets/images/slider/a1fa3283-0aaa-4cda-8c6c-e88c0722a3c9.png"
+    },
+    {
+      "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/b8ba3469-fd67-4b0d-9d32-959740e5bf35.png",
+      "PackagePath": "staticwebassets/assets/images/slider/b8ba3469-fd67-4b0d-9d32-959740e5bf35.png"
     },
     {
       "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/bg/1-1.jpg",

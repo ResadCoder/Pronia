@@ -29,7 +29,7 @@
                 <div class="single-product-img">
                   <div class="swiper-container single-product-slider">
                     <div class="swiper-wrapper">
-                      @foreach (var pi in Model.Images)
+                      @foreach (var pi in Model.ProductImages)
                       {
                         <div class="swiper-slide">
                           <a
@@ -47,7 +47,7 @@
                   <div class="thumbs-arrow-holder">
                     <div class="swiper-container single-product-thumbs">
                       <div class="swiper-wrapper">
-                        @foreach (var pi in Model.Images)
+                        @foreach (var pi in Model.ProductImages)
                         {
                           <a href="#" class="swiper-slide">
                             <img
@@ -94,7 +94,7 @@
                     <span class="selector-title border-bottom-0">Color</span>
                     <select class="nice-select wide border-bottom-0 rounded-0">
                       <option selected disabled value="default">--select color--</option>
-                      @foreach (var pc in Model.ProductColors)
+                      @foreach (var pc in Model.Colors)
                       {
                        <option>@pc.Color.Name</option> 
                       }
@@ -104,7 +104,7 @@
                     <span class="selector-title">Size</span>
                     <select class="nice-select wide rounded-0">
                       <option selected disabled value="default">--select size--</option>
-                      @foreach (var ps in Model.ProductSizes)
+                      @foreach (var ps in Model.Sizes)
                       {
                         <option>@ps.Size.Name</option>
                       }

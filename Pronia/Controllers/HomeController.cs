@@ -20,8 +20,8 @@ public class HomeController : Controller
     public async Task<IActionResult> Index()
     {
         var slides = await _context.Slides
-            .Where(s => s.ShowSlide == true)
-            .OrderBy(s => s.Id)
+            .Where(s => s.ShowSlide)
+            .OrderBy(s => s.Order)
             .ToListAsync();
         var cards = await _context.Cards.ToListAsync();
         var categories = await _context.Categories.ToListAsync();
@@ -77,14 +77,14 @@ public class HomeController : Controller
     private async Task<List<ProductViewModel>> GetFeaturedProductsAsync()
     {
         return await _context.Products
-            .Include(p => p.Images)
+            .Include(p => p.ProductImages)
             .Select(p => new ProductViewModel
             {
                 Id = p.Id,
                 Name = p.Name,
                 Description = p.Description,
                 Price = p.Price,
-                Images = p.Images.Select(i => new ProductImageViewModel
+                Images = p.ProductImages.Select(i => new ProductImageViewModel
                 {
                     ImgPath = i.ImgPath,
                     PositionEnum = i.PositionEnum

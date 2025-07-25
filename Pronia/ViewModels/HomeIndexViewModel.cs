@@ -16,6 +16,7 @@ public class HomeIndexViewModel
     
     public List<ProductImageViewModel> ProductImages { get; set; } = new List<ProductImageViewModel>();
     
+    public List<ProductImage>  ProductsImages { get; set; } = new List<ProductImage>();
     public List<Category> Categories { get; set; } = new List<Category>();
     
     public List<ProductColor> ProductColors { get; set; } = new List<ProductColor>();

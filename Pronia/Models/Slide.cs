@@ -12,8 +12,6 @@ namespace Pronia.Models;
         public string? Description { get; set; }
 
         public string Subtitle { get; set; } = null!;
-
-        public string ButtonText { get; set; } = null!;
         
         public int Order { get; set; } 
         

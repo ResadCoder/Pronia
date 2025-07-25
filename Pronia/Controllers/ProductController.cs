@@ -25,11 +25,11 @@ public class ProductController : Controller
          return BadRequest();
       }
       Product? product = await _context.Products
-         .Include(p => p.Images)
+         .Include(p => p.ProductImages)
          .Include(p => p.Category)
-         .Include(p => p.ProductColors)
+         .Include(p => p.Colors)
             .ThenInclude(pc => pc.Color)
-         .Include(p => p.ProductSizes)
+         .Include(p => p.Sizes)
             .ThenInclude(ps => ps.Size)
          .FirstOrDefaultAsync(p => p.Id == id);
       if (product == null)
