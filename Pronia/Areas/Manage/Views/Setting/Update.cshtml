@@ -1,0 +1,18 @@
+@model Setting
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">@Model.Key</h4>
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label asp-for="Value"></label>
+                    <input asp-for = "Value" type="text" class="form-control"  placeholder="Value">
+                    <span class="text-danger pt-2  fs-6 small  fw-light" asp-validation-for="Value"></span>
+                    <input type="hidden" asp-for="Key"/>
+                </div>
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                <a asp-controller="Setting" asp-action="Index" class="btn btn-light">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>

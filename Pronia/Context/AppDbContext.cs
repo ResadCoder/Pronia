@@ -1,13 +1,13 @@
 using System.Net.Mime;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Pronia.Models;
 
 namespace Pronia.Context;
 
-public class AppDbContext: DbContext
+public class AppDbContext(DbContextOptions options) : IdentityDbContext<User, IdentityRole<int>, int>(options)
 {
-    public AppDbContext(DbContextOptions options) : base(options){ }
-    
     public DbSet<Category> Categories { get; set; } 
     
     public DbSet<ProductImage> ProductImages { get; set; }
@@ -28,5 +28,9 @@ public class AppDbContext: DbContext
     public DbSet<ProductColor> ProductColors { get; set; }
     
     public DbSet<ProductSize> ProductSizes { get; set; }
+    
+    public DbSet<Setting> Settings { get; set; }
+    
+
 
 }

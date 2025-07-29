@@ -1,0 +1,52 @@
+@model ICollection<Setting>
+@{ int count = 0; }
+<div class="col-lg-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Settings</h4>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Key</th>
+                        <th>Value</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var setting in Model)
+                    {
+                        count++;
+                        <tr>
+                            <td>
+                                @count
+                            </td>
+                            <td>
+                                @setting.Key
+                            </td>
+                            <td>
+                                @setting.Value
+                            </td>
+                            <td>
+                                <a asp-controller="Setting" asp-action="Update" asp-route-key="@setting.Key" class="btn bg-warning"><i class="mdi mdi-pencil"></i></a>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+@if (TempData["Success"] != null)
+{
+    <script>
+        Swal.fire({
+            text: "@TempData["Success"]",
+            icon: "success"
+        });
+    </script>
+}

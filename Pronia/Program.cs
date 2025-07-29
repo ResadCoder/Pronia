@@ -1,5 +1,8 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Pronia.Context;
+using Pronia.Models;
+using Pronia.Services;
 
 namespace Pronia;
 
@@ -16,9 +19,26 @@ public class Program
                     options.UseSqlServer(builder.Configuration.GetConnectionString("MSSQL"));
                 }
             );
+        
+        builder.Services.AddScoped<LayoutService>();
 
+        builder.Services.AddIdentity<User, IdentityRole<int>>(options =>
+        { 
+            options.Password.RequiredLength = 6;
+            options.Password.RequireNonAlphanumeric = false;
+            options.Password.RequireDigit = true;
+            options.User.RequireUniqueEmail = true;
+            options.Lockout.MaxFailedAccessAttempts = 3;
+            options.Lockout.AllowedForNewUsers = true;
+            options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
+        }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+        
+        
         var app = builder.Build();
 
+        app.UseAuthentication();
+        app.UseAuthorization();
+        
         // Configure the HTTP request pipeline.
         if (!app.Environment.IsDevelopment())
         {
@@ -41,9 +61,7 @@ public class Program
         app.MapControllerRoute(
             name: "default",
             pattern: "{controller=Home}/{action=Index}/{id?}");
-      
         
-
         app.Run(); 
     }
 }

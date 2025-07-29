@@ -264,17 +264,74 @@ public class ProductController : Controller
         
         if (vm.HoverImage != null)
         {
-            ProductImage  hoverImg = product.ProductImages.FirstOrDefault(pi => pi.PositionEnum == ImagePositionEnum.hover)!;
+             ProductImage  hoverImg = product.ProductImages.FirstOrDefault(pi => pi.PositionEnum == ImagePositionEnum.hover)!;
              hoverImg.ImgPath.DeleteFile(_webHostEnvironment.WebRootPath, "admin", "media", "products");
-           
              hoverImg.ImgPath = await vm.HoverImage.CreateFileAsync(_webHostEnvironment.WebRootPath, "admin", "media", "products");
         }
         
+        product.Name = vm.Name;
+        product.Description = vm.Description;
+        product.Price = vm.Price;
+        product.Discount = vm.Discount;
+        product.SKU = vm.Sku;
+        product.CategoryId = vm.CategoryId;
         
+        await _context.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
+    }
+
+    public async Task<IActionResult> Delete(int id)
+    {
+        if(id<=0) return BadRequest();
+        Product? product = await _context.Products
+            .Include(p => p.ProductImages)
+            .FirstOrDefaultAsync(p => p.Id == id);
+        if(product==null) return NotFound();
+        foreach (var img in product.ProductImages)
+        {
+            img.ImgPath.DeleteFile(_webHostEnvironment.WebRootPath, "admin", "media", "products");
+        }
+        _context.Products.Remove(product);
+        await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }
 
 
+    public async Task<IActionResult> Details(int id)
+    {
+        if (id <= 0) return BadRequest();
+        
+        ProductDetailsVM? vm = await _context.Products
+            .Where(p => p.Id == id)
+            .Select(p => new ProductDetailsVM
+            {
+                Id = p.Id,
+                Name = p.Name,
+                Description = p.Description,
+                Price = p.Price,
+                Discount = p.Discount,
+                Sku = p.SKU,
+
+                CategoryName = p.Category.Name,  
+                Sizes = p.Sizes.Select(s => s.Size.Name).ToList(),
+                Colors = p.Colors.Select(c => c.Color.Name).ToList(),
+
+                MainImagePath = p.ProductImages.FirstOrDefault(pi => pi.PositionEnum == ImagePositionEnum.main)!.ImgPath,
+                HoverImagePath = p.ProductImages.FirstOrDefault(pi => pi.PositionEnum == ImagePositionEnum.hover)!.ImgPath,
+                AdditionalImages = p.ProductImages
+                    .Where(pi => pi.PositionEnum == ImagePositionEnum.additional)
+                    .Select(pi => pi.ImgPath)
+                    .ToList()
+            })
+            .FirstOrDefaultAsync();
+
+        if (vm == null) return NotFound();
+        
+        return View(vm);
+    }
+    
+    
+    
     private async Task GetRequiredDataAsync(ProductUpdateVM vm)
     {
         vm.Colors = await _context.Colors.ToListAsync();

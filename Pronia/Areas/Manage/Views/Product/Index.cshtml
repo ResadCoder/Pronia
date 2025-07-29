@@ -13,6 +13,7 @@
             <th>Name</th>
             <th>Price</th>
             <th>Discount</th>
+            <th>Actions</th>
           </tr>
           </thead>
           <tbody>
@@ -33,7 +34,8 @@
               </td>
               <td>
                 <a asp-controller="Product" asp-action="Update" asp-route-id="@product.Id" class="btn bg-warning"><i class="mdi mdi-pencil"></i></a>
-              <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id" class="btn bg-danger"><i class="mdi mdi-delete"></i></a>
+                <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id" class="btn bg-danger"><i class="mdi mdi-delete"></i></a>
+                <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id" class="btn bg-danger"><i class="mdi mdi-file-text"></i></a>
               </td>
             </tr>
           }

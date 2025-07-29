@@ -827,3 +827,4 @@
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/x99u76czzs-xx02ztqvw3.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/Pronia.sourcelink.json
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/ha2bfd8ba5-y8ov0lqvf1.gz
+/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

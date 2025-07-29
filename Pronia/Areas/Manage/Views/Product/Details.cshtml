@@ -1,0 +1,71 @@
+@using Pronia.Areas.Manage.ViewModels.Product
+@model ProductDetailsVM
+<div class="col-lg-6 grid-margin stretch-card">
+    <div class="card"style="max-width: 2300px; margin: auto;">
+        <div class="card-body" style="max-width: 2300px; margin: auto;" >
+            <h4 class="card-title">Categories</h4>
+            <a asp-controller="Product" asp-action="Index" class="btn btn-success">Go Back</a>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Discount</th>
+                        <th>Des</th>
+                        <th>Sku</th>
+                        <th>Category</th>
+                        <th>Colors</th>
+                        @* <th>Sizes</th> *@
+                        @* <th>MainImage</th> *@
+                        @* <th>HoverImage</th> *@
+                        @* <th>AdditionalImages</th> *@
+                        @* <th>Actions</th> *@
+                    </tr>
+                    </thead>
+                    <tbody>
+                  
+                        <tr>
+                            <td>
+                                @Model.Name
+                            </td>
+                            <td>
+                                @Model.Price
+                            </td>
+                            <td>
+                                @Model.Discount
+                            </td>
+                            <td>
+                                @Model.Description
+                            </td>
+                            <td>
+                                @Model.Sku
+                            </td>
+                            <td>
+                                @Model.CategoryName
+                            </td>
+                            <td>
+                                @foreach (var colorName in Model.Colors)
+                                {
+                                    @colorName
+                                }
+                            </td>
+                            <td>
+                                <a asp-controller="Product" asp-action="Update" asp-route-id="@Model.Id" class="btn bg-warning"><i class="mdi mdi-pencil"></i></a>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+  .table th, .table td {
+      padding: 50px 50px;
+      vertical-align: middle;
+  }
+</style>
