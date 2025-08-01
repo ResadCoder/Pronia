@@ -1,0 +1,51 @@
+@model Pronia.ViewModels.LoginVM
+<div class="w-100 row d-flex justify-content-center align-content-center">
+    <div class="col-lg-6 pt-5 pt-lg-0">
+        <form action="#" method="post">
+            <div class="login-form">
+                <h4 class="login-title">Login</h4>
+                <div class="row">
+                    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                    <div class="col-md-6 col-12">
+                        <label asp-for="UsernameOrEmail">Enter username or email</label>
+                        <input asp-for="UsernameOrEmail"/>
+                        <span class="text-danger" style="margin-top: 10px" asp-validation-for="UsernameOrEmail"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="Password"></label>
+                        <div style="position: relative;">
+                            <input asp-for="Password" type="password" class="form-control" id="passwordInput"
+                                   style="padding-right: 40px;" />
+                            <i class="fa fa-eye" id="eyeIcon"
+                               style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%);
+                  cursor: pointer; color: #6c757d; font-size: 1.2rem;">
+                            </i>
+                        </div>
+                        <span class="text-danger mt-2" asp-validation-for="Password"></span>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="form-check">
+                            <input asp-for="RememberMe" class="form-check-input" type="checkbox" />
+                            <label asp-for="RememberMe" class="form-check-label"></label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button
+                            class="btn btn-custom-size lg-size btn-pronia-primary">
+                            Login
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<<script>
+    document.getElementById('eyeIcon').addEventListener('click', function () {
+        const passwordInput = document.getElementById('passwordInput');
+        const isPassword = passwordInput.type === 'password';
+        passwordInput.type = isPassword ? 'text' : 'password';
+        this.classList.toggle('fa-eye');
+        this.classList.toggle('fa-eye-slash');
+    });
+</script>

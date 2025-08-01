@@ -1,0 +1,68 @@
+@{
+    Layout = null;
+}
+@model string
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: #d63384;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+        .flower-icon {
+            font-size: 40px;
+            color: #d63384;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Flower emoji -->
+    <div class="flower-icon">🌸</div>
+    <h1>Welcome to Pronia! 🌺</h1>
+    <p>Thank you for choosing <b>Pronia</b>.  
+        Please confirm your email address to activate your account.</p>
+    <a href="@Model" 
+       style="background:#198754;
+                  color:#ffffff !important;
+                  text-decoration:none;
+                  padding:14px 30px;
+                  border-radius:8px;
+                  font-size:16px;
+                  display:inline-block;">
+        Confirm Your Email 🌼
+    </a>
+    <div class="footer">
+        <p>If you did not register on Pronia, please ignore this email. 🌻</p>
+    </div>
+</div>
+</body>
+</html>
