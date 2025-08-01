@@ -101,16 +101,18 @@
                           @if (User.Identity is { IsAuthenticated: true })
                           {
                             <li>
-                              <a class="dropdown-item" href="my-account.html">My account</a>
+                              <a class="dropdown-item" asp-controller="Account" asp-action="MyAccount">My account</a>
+                              <a asp-controller="Account" asp-action="Logout" class="btn btn-light">Logout</a>
                             </li>
+                           
                           }
                           else
                           {
                             <li>
-                              <a class="dropdown-item" href="login-register.html">Login | Register</a>
+                              <a class="dropdown-item" asp-controller="Account" asp-action="Login">Login</a>
+                              <a class="dropdown-item" asp-controller="Account" asp-action="Register">Register</a>
                             </li>
                           }
-                         
                         </ul>
                       </li>
                       <li class="d-none d-lg-block">

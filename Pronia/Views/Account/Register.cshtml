@@ -28,13 +28,26 @@
                     </div>
                     <div class="col-md-6">
                         <label asp-for="Password"></label>
-                        <input asp-for="Password">
-                        <span class="text-danger" style="margin-top: 10px" asp-validation-for="Password"></span>
+                        <div style="position: relative;">
+                            <input asp-for="Password" type="password" class="form-control toggle-password" data-eye="1"
+                                   style="padding-right: 40px;" />
+                            <i class="fa fa-eye toggle-eye" data-eye="1"
+                               style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%);
+                  cursor: pointer; color: #6c757d; font-size: 1.2rem;"></i>
+                        </div>
+                        <span class="text-danger mt-2" asp-validation-for="Password"></span>
                     </div>
+
                     <div class="col-md-6">
                         <label asp-for="ConfirmPassword"></label>
-                        <input asp-for="ConfirmPassword"/>
-                        <span class="text-danger" style="margin-top: 10px" asp-validation-for="ConfirmPassword"></span>
+                        <div style="position: relative;">
+                            <input asp-for="ConfirmPassword" type="password" class="form-control toggle-password" data-eye="2"
+                                   style="padding-right: 40px;" />
+                            <i class="fa fa-eye toggle-eye" data-eye="2"
+                               style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%);
+                  cursor: pointer; color: #6c757d; font-size: 1.2rem;"></i>
+                        </div>
+                        <span class="text-danger mt-2" asp-validation-for="ConfirmPassword"></span>
                     </div>
                     <div class="col-12">
                         <button
@@ -47,3 +60,22 @@
         </form>
     </div>
 </div>
+
+@if (ViewBag.ConfirmEmail !=null && ViewBag.ConfirmEmail)
+{
+    <script>window.alert("Confirm your email.")</script>
+}
+
+
+<script>
+    document.querySelectorAll('.toggle-eye').forEach(icon => {
+        icon.addEventListener('click', function () {
+            const index = this.dataset.eye;
+            const input = document.querySelector(`.toggle-password[data-eye="${index}"]`);
+            const isPassword = input.type === 'password';
+            input.type = isPassword ? 'text' : 'password';
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
+        });
+    });
+</script>

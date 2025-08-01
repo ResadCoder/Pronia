@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic;
@@ -16,7 +17,7 @@ public class ProductController : Controller
 {
     private readonly AppDbContext _context ;
     private readonly IWebHostEnvironment _webHostEnvironment;
-
+    
     public ProductController(AppDbContext context, IWebHostEnvironment webHostEnvironment)
     {
         _context = context;

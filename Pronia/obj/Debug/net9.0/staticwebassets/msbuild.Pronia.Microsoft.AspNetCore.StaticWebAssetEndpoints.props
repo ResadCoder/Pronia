@@ -10464,6 +10464,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"umbh8h2h7m"},{"Name":"integrity","Value":"sha256-2l6yp7dd4bHEBzbMoaaKBZntbQlva\u002Bwjen65yQOzEmU="},{"Name":"label","Value":"_content/Pronia/assets/images/contact/1-1-370x500.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"18471"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00222l6yp7dd4bHEBzbMoaaKBZntbQlva\u002Bwjen65yQOzEmU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 03 Jul 2025 15:33:04 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Pronia/assets/images/email/email-banner.8cj1n388ka.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\email\email-banner.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8cj1n388ka"},{"Name":"integrity","Value":"sha256-2ATL8opUjxfv21hDrLufgye64Z\u002BwH\u002BXzMu9YAVdLuRs="},{"Name":"label","Value":"_content/Pronia/assets/images/email/email-banner.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"24645"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00222ATL8opUjxfv21hDrLufgye64Z\u002BwH\u002BXzMu9YAVdLuRs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 31 Jul 2025 14:49:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Pronia/assets/images/email/email-banner.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\email\email-banner.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2ATL8opUjxfv21hDrLufgye64Z\u002BwH\u002BXzMu9YAVdLuRs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"24645"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00222ATL8opUjxfv21hDrLufgye64Z\u002BwH\u002BXzMu9YAVdLuRs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 31 Jul 2025 14:49:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Pronia/assets/images/error-404/404.moomgu8qjz.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\error-404\404.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

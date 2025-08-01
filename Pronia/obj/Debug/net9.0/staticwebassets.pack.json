@@ -3489,6 +3489,10 @@
       "PackagePath": "staticwebassets/assets/images/contact/1-1-370x500.jpg"
     },
     {
+      "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/email/email-banner.jpeg",
+      "PackagePath": "staticwebassets/assets/images/email/email-banner.jpeg"
+    },
+    {
       "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/error-404/404.png",
       "PackagePath": "staticwebassets/assets/images/error-404/404.png"
     },

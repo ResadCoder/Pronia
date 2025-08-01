@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Pronia.Attributes;
 
 namespace Pronia.ViewModels;
 
@@ -12,13 +13,16 @@ public class RegisterVM
     
     public string Username { get; set; } = null!;
     
-    [EmailAddress]
-    public string Email { get; set; } = null!;
+    [EmailCheck]
+    public string Email { get; set;} = null!;
     
     [DataType(DataType.Password)]
-    public string Password { get; set; } = null!;
+    [Required]
+    [MinLength(6)]
+    public string Password { get; set; } 
     
+    [Required]
     [DataType(DataType.Password)]
     [Compare(nameof(Password), ErrorMessage = "The password and confirmation password do not match.")]
-    public string ConfirmPassword { get; set; } = null!;
+    public string ConfirmPassword { get; set; }
 }
