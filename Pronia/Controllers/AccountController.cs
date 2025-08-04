@@ -10,7 +10,7 @@ namespace Pronia.Controllers;
 
 public class AccountController(UserManager<User> usermanager, SignInManager<User> signinmanager,RoleManager<IdentityRole<int>> roleManager,IEmailService emailService,IViewRenderService viewRenderService ) : Controller
 {
-    // GET
+    
     public IActionResult Register()
     {
         if (User.Identity!.IsAuthenticated) return NotFound();
@@ -43,7 +43,6 @@ public class AccountController(UserManager<User> usermanager, SignInManager<User
                 return View(vm);
             }
             case true:
-                
                 string token = await usermanager.GenerateEmailConfirmationTokenAsync(newUser);
                 string link = Url.Action(nameof(ConfirmEmail), "Account", new {Token = token, Email = vm.Email },
                      Request.Scheme)!;
@@ -51,7 +50,7 @@ public class AccountController(UserManager<User> usermanager, SignInManager<User
                 await emailService.SendEmailAsync(vm.Email, "Email Confirmation", body);
                 break;
         }
-        
+        await usermanager.AddToRoleAsync(newUser, nameof(UserRoleEnum.Member));
         ViewBag.ConfirmEmail = true;
         return RedirectToAction(nameof(Login)); 
     }
@@ -114,7 +113,7 @@ public class AccountController(UserManager<User> usermanager, SignInManager<User
         
         if (!user.EmailConfirmed)
         {
-            ModelState.AddModelError(string.Empty, "Email/Username or Password is invalid. ");
+            ModelState.AddModelError(string.Empty, "Account not confirmed.");
         }
         
         await signinmanager.SignInAsync(user, vm.RememberMe );
@@ -125,22 +124,10 @@ public class AccountController(UserManager<User> usermanager, SignInManager<User
         
         return RedirectToAction("Index","Home");
     }
-
-    public async Task<IActionResult> CreateRoles()
-    {
-        foreach (UserRoleEnum  role in  Enum.GetValues<UserRoleEnum>())
-        {
-            if(!await roleManager.RoleExistsAsync(role.ToString()))
-            {
-                await roleManager.CreateAsync(new IdentityRole<int>(role.ToString()));
-            }
-        }
-        return Ok();
-    }
-
-    [Authorize]
+    
     public async Task<IActionResult> MyAccount()
     {
+        if (User.Identity!.IsAuthenticated) return NotFound();
         return View();
     }
 }

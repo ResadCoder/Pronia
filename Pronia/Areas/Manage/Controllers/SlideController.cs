@@ -43,7 +43,7 @@ public class SlideController : Controller
 
         const long size = 2; 
         const FileSizeEnum sizeType = FileSizeEnum.Mb;
-        if (vm.Photo.ValidateFileSize(size,sizeType))
+        if (!vm.Photo.ValidateFileSize(size,sizeType))
         {
             ModelState.AddModelError(nameof(vm.Photo), $"Please provide a valid file length ,size must be less than {size} {sizeType.ToString().ToUpper()}");
             return View();

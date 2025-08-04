@@ -22,8 +22,10 @@ public class Program
         });
 
         builder.Services.AddScoped<LayoutService>();
+        builder.Services.AddScoped<AppDbContextInitializer>();
         builder.Services.AddScoped<IEmailService, EmailService>();
         builder.Services.AddScoped<IViewRenderService, ViewRenderService>();
+       
 
         // Identity
         builder.Services.AddIdentity<User, IdentityRole<int>>(options =>
@@ -38,21 +40,7 @@ public class Program
             })
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();
-
-        //
-        // builder.Services.ConfigureApplicationCookie(options =>
-        // {
-        //     options.Events.OnRedirectToLogin = context =>
-        //     {
-        //         context.Response.StatusCode = StatusCodes.Status401Unauthorized;
-        //         return Task.CompletedTask;
-        //     };
-        //     options.Events.OnRedirectToAccessDenied = context =>
-        //     {
-        //         context.Response.StatusCode = StatusCodes.Status403Forbidden;
-        //         return Task.CompletedTask;
-        //     };
-        // });
+        
 
         var app = builder.Build();
 
@@ -71,12 +59,15 @@ public class Program
         app.UseAuthentication();
         app.UseAuthorization();
 
+        using (var scope = app.Services.CreateScope())
+        {
+            AppDbContextInitializer initializer  = scope.ServiceProvider.GetRequiredService<AppDbContextInitializer>();
+            initializer.InitializeAsync().Wait();
+        }
 
         app.MapControllerRoute(
             name: "manage",
             pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
-            // .RequireAuthorization(new AuthorizeAttribute { Roles = "Admin" });
-
         
         app.MapControllerRoute(
             name: "default",

@@ -10,9 +10,9 @@ public class EmailCheckAttribute : ValidationAttribute
 
     protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
     {
+        if (value == null) return new ValidationResult("Email is required");
+        string email = value.ToString();
         
-        string email = value.ToString()!;
-
         if (!Regex.IsMatch(email, Pattern))
             return new ValidationResult("Enter right email address.");
 

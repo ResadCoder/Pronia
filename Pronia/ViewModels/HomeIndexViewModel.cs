@@ -12,7 +12,7 @@ public class HomeIndexViewModel
     
     public List<BlogViewModel> Blogs { get; set; } = new List<BlogViewModel>();
     
-    public List<ProductViewModel> Products { get; set; } = new List<ProductViewModel>();
+    public List<HomeIndexProductVM> Products { get; set; } = new List<HomeIndexProductVM>();
     public List<Category> Categories { get; set; } = new List<Category>();
     
 }

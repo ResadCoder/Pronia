@@ -74,11 +74,11 @@ public class HomeController : Controller
             .ToListAsync();
     }
 
-    private async Task<List<ProductViewModel>> GetFeaturedProductsAsync()
+    private async Task<List<HomeIndexProductVM>> GetFeaturedProductsAsync()
     {
         return await _context.Products
             .Include(p => p.ProductImages)
-            .Select(p => new ProductViewModel
+            .Select(p => new HomeIndexProductVM
             {
                 Id = p.Id,
                 Name = p.Name,

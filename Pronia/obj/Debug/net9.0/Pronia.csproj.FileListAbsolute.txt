@@ -167,7 +167,6 @@
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/sld688yhtb-svsctzdk5d.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/gjg8fukddx-qam996dp9n.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/ynpu18jkov-uq9hgyw7km.gz
-/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/1zv6y05z13-q8txmrcc3s.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/b552enqpfz-u454fzeefp.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/l0gm4h7hc6-r67c8v5kpt.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/487o12mtdc-hj051a2yw9.gz
@@ -828,3 +827,4 @@
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/Pronia.sourcelink.json
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/ha2bfd8ba5-y8ov0lqvf1.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/1zv6y05z13-te82ts8isz.gz

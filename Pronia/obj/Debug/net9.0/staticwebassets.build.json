@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DPfYeCYG/pjYGsp1Qectf/v0eD2wFPGmblRMygyMgTQ=",
+  "Hash": "VYpbziuqqOK7MHcPkVsm8tJA5vVHWpLiZ8MboHbG4wg=",
   "Source": "Pronia",
   "BasePath": "_content/Pronia",
   "Mode": "Default",
@@ -1025,12 +1025,12 @@
       "OriginalItemSpec": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/vendors/flag-icon-css/flags/4x3/gb-sct.svg"
     },
     {
-      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/1zv6y05z13-q8txmrcc3s.gz",
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/1zv6y05z13-te82ts8isz.gz",
       "SourceId": "Pronia",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/Pronia",
-      "RelativePath": "assets/js/main#[.{fingerprint=q8txmrcc3s}]?.js.gz",
+      "RelativePath": "assets/js/main#[.{fingerprint=te82ts8isz}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1039,8 +1039,8 @@
       "RelatedAsset": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/js/main.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "wo4cauihut",
-      "Integrity": "wIS7D5W28jxei5ovDYPx8chy1QXzDosv76uC+BkhdwE=",
+      "Fingerprint": "hpq6vogbet",
+      "Integrity": "tWvufWuFwiURheTnQWgBhA33SHXBlf8PKxa/Lv5uLEk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/js/main.js"
@@ -19148,6 +19148,69 @@
       "OriginalItemSpec": "wwwroot/admin/js/x-editable.js"
     },
     {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/00daf753-f29f-4c83-91ae-2619782d9c47.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/00daf753-f29f-4c83-91ae-2619782d9c47#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h4xluubby9",
+      "Integrity": "D9/n5K0h0ZzkUhoGnK4h9J+dVrM0ACOEW6411ojte6o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/00daf753-f29f-4c83-91ae-2619782d9c47.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/1226002f-01ab-433c-97fe-4a68fa5713a6.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/1226002f-01ab-433c-97fe-4a68fa5713a6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gnd8nx3ag3",
+      "Integrity": "HEJqabrqxpMRNF/OEe206MY3mvwdjfR9xmSRe5ZH2Hs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/1226002f-01ab-433c-97fe-4a68fa5713a6.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/17120e56-738f-4b8d-97b9-f12837c02bf2.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/17120e56-738f-4b8d-97b9-f12837c02bf2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6x66fs73yk",
+      "Integrity": "ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/17120e56-738f-4b8d-97b9-f12837c02bf2.jpg"
+    },
+    {
       "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/207098e8-57c4-4a2c-b4b8-747723d99b9e.png",
       "SourceId": "Pronia",
       "SourceType": "Discovered",
@@ -19167,6 +19230,489 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/admin/media/products/207098e8-57c4-4a2c-b4b8-747723d99b9e.png"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/2f1e0108-b249-4a4d-9d1b-015f969b0551.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/2f1e0108-b249-4a4d-9d1b-015f969b0551#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0nkguxayd9",
+      "Integrity": "hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/2f1e0108-b249-4a4d-9d1b-015f969b0551.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/37d8f69a-7205-440c-ac5f-e154393a082f.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/37d8f69a-7205-440c-ac5f-e154393a082f#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6x66fs73yk",
+      "Integrity": "ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/37d8f69a-7205-440c-ac5f-e154393a082f.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/404414af-ea5b-45cb-9fed-89123f86eb3f.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/404414af-ea5b-45cb-9fed-89123f86eb3f#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "afbbdl4qs1",
+      "Integrity": "apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/404414af-ea5b-45cb-9fed-89123f86eb3f.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/428a3fda-cbc3-4d54-98ee-b44cb1a3aa2a.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/428a3fda-cbc3-4d54-98ee-b44cb1a3aa2a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mgkxvezmrx",
+      "Integrity": "1gw/ibID5KxWnxlkJV6jbnQKc+/U/Oo5LAeG2pJySCQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/428a3fda-cbc3-4d54-98ee-b44cb1a3aa2a.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/55813af3-54c6-40fa-acaa-f52109ce7e28.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/55813af3-54c6-40fa-acaa-f52109ce7e28#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "afbbdl4qs1",
+      "Integrity": "apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/55813af3-54c6-40fa-acaa-f52109ce7e28.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/5859ca6b-89c5-47bb-a240-285e0c84d200.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/5859ca6b-89c5-47bb-a240-285e0c84d200#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jcjpd51o2s",
+      "Integrity": "zWC0feroFPLfwkxwKoLrlFOTYsaL7J5bGl5Y8LccaBg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/5859ca6b-89c5-47bb-a240-285e0c84d200.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/77aac50a-fd94-4c6e-90e0-8300db1078e8.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/77aac50a-fd94-4c6e-90e0-8300db1078e8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fut16zv9ry",
+      "Integrity": "V68lp4GtENku5ZxDzmvYW9gfOlYJLMsB+Hix1rlA4gw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/77aac50a-fd94-4c6e-90e0-8300db1078e8.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/7e1f1613-d2ee-45a4-b96b-d09d8658ceda.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/7e1f1613-d2ee-45a4-b96b-d09d8658ceda#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "arp987lwle",
+      "Integrity": "WkGwO++RJLKtdyDoGDcIqcBjf7RznhgWIM+GfY5yhBE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/7e1f1613-d2ee-45a4-b96b-d09d8658ceda.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/80b0d8be-53a6-467c-85be-0f95965c17ef.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/80b0d8be-53a6-467c-85be-0f95965c17ef#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fut16zv9ry",
+      "Integrity": "V68lp4GtENku5ZxDzmvYW9gfOlYJLMsB+Hix1rlA4gw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/80b0d8be-53a6-467c-85be-0f95965c17ef.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/86078131-8250-4333-a80a-c578774b0969.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/86078131-8250-4333-a80a-c578774b0969#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s5thmwxg23",
+      "Integrity": "IOxnOvqH562Beklhi1gDghEjD1aLixAyLaE1xrWXIgg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/86078131-8250-4333-a80a-c578774b0969.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/8c1f4684-9547-47f9-a510-aa71bea10748.webp",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/8c1f4684-9547-47f9-a510-aa71bea10748#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pio9rm3610",
+      "Integrity": "n1jXwyHA2Eb15Q+90UtTL9dl+5XTv+KORUizxutfc7Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/8c1f4684-9547-47f9-a510-aa71bea10748.webp"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/9211a56d-a39c-451f-9a62-8443b137e4b5.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/9211a56d-a39c-451f-9a62-8443b137e4b5#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jcjpd51o2s",
+      "Integrity": "zWC0feroFPLfwkxwKoLrlFOTYsaL7J5bGl5Y8LccaBg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/9211a56d-a39c-451f-9a62-8443b137e4b5.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/937e1318-d1e2-404a-bc5c-265eaabe4052.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/937e1318-d1e2-404a-bc5c-265eaabe4052#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d4912lk64h",
+      "Integrity": "k6VBR1grXK7f4M4uPCGtKwdouLgLFwgBn8c4XpEkd8E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/937e1318-d1e2-404a-bc5c-265eaabe4052.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/942ad77b-123d-4faf-a0d1-b4b8d11aff04.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/942ad77b-123d-4faf-a0d1-b4b8d11aff04#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gnd8nx3ag3",
+      "Integrity": "HEJqabrqxpMRNF/OEe206MY3mvwdjfR9xmSRe5ZH2Hs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/942ad77b-123d-4faf-a0d1-b4b8d11aff04.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/a5a954cf-2590-4ad0-a5d6-dc7ce8356e0b.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/a5a954cf-2590-4ad0-a5d6-dc7ce8356e0b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0nkguxayd9",
+      "Integrity": "hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/a5a954cf-2590-4ad0-a5d6-dc7ce8356e0b.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/aa73e56d-303e-48ae-973d-95e551b54822.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/aa73e56d-303e-48ae-973d-95e551b54822#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gicrpzoekn",
+      "Integrity": "GJ3ZC4ngIMxjxEbrQhvDZbg/mrN1HQPyewikV5IwaG0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/aa73e56d-303e-48ae-973d-95e551b54822.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/b4e991f2-e3e7-4707-a329-f078c4505989.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/b4e991f2-e3e7-4707-a329-f078c4505989#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cv1ho448w2",
+      "Integrity": "SPR72a5n6CWeXvqzvlG11ryRUj5AZBDizQuagz69CaI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/b4e991f2-e3e7-4707-a329-f078c4505989.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/d185ff78-f96a-45f3-9850-c5fe253ca5ef.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/d185ff78-f96a-45f3-9850-c5fe253ca5ef#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jk70eutqda",
+      "Integrity": "U3xisroVgSFkO5Sgb4YciKPs8ga+5PJKqZtVTGoX8oQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/d185ff78-f96a-45f3-9850-c5fe253ca5ef.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/df2b4b33-9088-44f9-a9ed-2029e28410e7.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/df2b4b33-9088-44f9-a9ed-2029e28410e7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "afbbdl4qs1",
+      "Integrity": "apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/df2b4b33-9088-44f9-a9ed-2029e28410e7.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/e57792e8-ea51-471d-9144-15a846d32ee2.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/e57792e8-ea51-471d-9144-15a846d32ee2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qc85ad4o9b",
+      "Integrity": "ipc1e3De5BVzGHgrpK7pijW9Q2/iVt3RBLa1v8iVE4E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/e57792e8-ea51-471d-9144-15a846d32ee2.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/ec01735d-9903-4d64-8b9f-dd34fec68eb8.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/ec01735d-9903-4d64-8b9f-dd34fec68eb8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "afbbdl4qs1",
+      "Integrity": "apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/ec01735d-9903-4d64-8b9f-dd34fec68eb8.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/f05d9e1a-1be3-4679-a317-fe180b5020d0.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/f05d9e1a-1be3-4679-a317-fe180b5020d0#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0nkguxayd9",
+      "Integrity": "hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/f05d9e1a-1be3-4679-a317-fe180b5020d0.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/f664d75b-e251-4763-957c-d1e5cda3d00d.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "admin/media/products/f664d75b-e251-4763-957c-d1e5cda3d00d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6x66fs73yk",
+      "Integrity": "ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/media/products/f664d75b-e251-4763-957c-d1e5cda3d00d.jpg"
     },
     {
       "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/f910427c-3245-4c4c-b54f-c911d8f2662d.webp",
@@ -33386,33 +33932,12 @@
       "OriginalItemSpec": "wwwroot/assets/images/sidebar/banner/1-270x300.jpg"
     },
     {
-      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/a1fa3283-0aaa-4cda-8c6c-e88c0722a3c9.png",
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/26a8760a-be2d-4aa8-9cc0-07c1af475dad.png",
       "SourceId": "Pronia",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
       "BasePath": "_content/Pronia",
-      "RelativePath": "assets/images/slider/a1fa3283-0aaa-4cda-8c6c-e88c0722a3c9#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "slnpbejs8h",
-      "Integrity": "wFZ6CVfLaPtR4dJ0GC1tAqWYGjg2Dw8S5okOtLMiM0Y=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/assets/images/slider/a1fa3283-0aaa-4cda-8c6c-e88c0722a3c9.png"
-    },
-    {
-      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/b8ba3469-fd67-4b0d-9d32-959740e5bf35.png",
-      "SourceId": "Pronia",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
-      "BasePath": "_content/Pronia",
-      "RelativePath": "assets/images/slider/b8ba3469-fd67-4b0d-9d32-959740e5bf35#[.{fingerprint}]?.png",
+      "RelativePath": "assets/images/slider/26a8760a-be2d-4aa8-9cc0-07c1af475dad#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33425,7 +33950,7 @@
       "Integrity": "EvBmS7rL7HNjWzWWdgam4MHMwDy0150kV+uemu63Z80=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/assets/images/slider/b8ba3469-fd67-4b0d-9d32-959740e5bf35.png"
+      "OriginalItemSpec": "wwwroot/assets/images/slider/26a8760a-be2d-4aa8-9cc0-07c1af475dad.png"
     },
     {
       "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/bg/1-1.jpg",
@@ -33468,6 +33993,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/images/slider/bg/2-1.jpg"
+    },
+    {
+      "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/f3e39a96-8ee1-44d3-b7e1-69c448e393bc.png",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "assets/images/slider/f3e39a96-8ee1-44d3-b7e1-69c448e393bc#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9czr9fgfw0",
+      "Integrity": "qfBQ0PDbeoh0bzsNhETgIvcnQ99KzLVCz1N12chQg8M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/images/slider/f3e39a96-8ee1-44d3-b7e1-69c448e393bc.png"
     },
     {
       "Identity": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/inner-img/1-1-524x617.png",
@@ -34786,8 +35332,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "q8txmrcc3s",
-      "Integrity": "SvQtkd/NQ5l5wqnlUjJTFqHDTeayj2OREUUR47Uy1jA=",
+      "Fingerprint": "te82ts8isz",
+      "Integrity": "6ztcLcwWOlzLhaGxCm0o4PHg5HVIOoil+4SPexGOd+4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/js/main.js"
@@ -72630,6 +73176,252 @@
       ]
     },
     {
+      "Route": "admin/media/products/00daf753-f29f-4c83-91ae-2619782d9c47.h4xluubby9.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/00daf753-f29f-4c83-91ae-2619782d9c47.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12335"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D9/n5K0h0ZzkUhoGnK4h9J+dVrM0ACOEW6411ojte6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:32:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h4xluubby9"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/00daf753-f29f-4c83-91ae-2619782d9c47.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D9/n5K0h0ZzkUhoGnK4h9J+dVrM0ACOEW6411ojte6o="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/00daf753-f29f-4c83-91ae-2619782d9c47.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/00daf753-f29f-4c83-91ae-2619782d9c47.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12335"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D9/n5K0h0ZzkUhoGnK4h9J+dVrM0ACOEW6411ojte6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:32:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D9/n5K0h0ZzkUhoGnK4h9J+dVrM0ACOEW6411ojte6o="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/1226002f-01ab-433c-97fe-4a68fa5713a6.gnd8nx3ag3.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/1226002f-01ab-433c-97fe-4a68fa5713a6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HEJqabrqxpMRNF/OEe206MY3mvwdjfR9xmSRe5ZH2Hs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:38:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gnd8nx3ag3"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/1226002f-01ab-433c-97fe-4a68fa5713a6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HEJqabrqxpMRNF/OEe206MY3mvwdjfR9xmSRe5ZH2Hs="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/1226002f-01ab-433c-97fe-4a68fa5713a6.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/1226002f-01ab-433c-97fe-4a68fa5713a6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HEJqabrqxpMRNF/OEe206MY3mvwdjfR9xmSRe5ZH2Hs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:38:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HEJqabrqxpMRNF/OEe206MY3mvwdjfR9xmSRe5ZH2Hs="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/17120e56-738f-4b8d-97b9-f12837c02bf2.6x66fs73yk.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/17120e56-738f-4b8d-97b9-f12837c02bf2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:37:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6x66fs73yk"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/17120e56-738f-4b8d-97b9-f12837c02bf2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/17120e56-738f-4b8d-97b9-f12837c02bf2.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/17120e56-738f-4b8d-97b9-f12837c02bf2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:37:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo="
+        }
+      ]
+    },
+    {
       "Route": "admin/media/products/207098e8-57c4-4a2c-b4b8-747723d99b9e.2cu2un1xia.png",
       "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/207098e8-57c4-4a2c-b4b8-747723d99b9e.png",
       "Selectors": [],
@@ -72708,6 +73500,1892 @@
         {
           "Name": "integrity",
           "Value": "sha256-EvBmS7rL7HNjWzWWdgam4MHMwDy0150kV+uemu63Z80="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/2f1e0108-b249-4a4d-9d1b-015f969b0551.0nkguxayd9.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/2f1e0108-b249-4a4d-9d1b-015f969b0551.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:32:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0nkguxayd9"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/2f1e0108-b249-4a4d-9d1b-015f969b0551.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/2f1e0108-b249-4a4d-9d1b-015f969b0551.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/2f1e0108-b249-4a4d-9d1b-015f969b0551.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:32:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/37d8f69a-7205-440c-ac5f-e154393a082f.6x66fs73yk.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/37d8f69a-7205-440c-ac5f-e154393a082f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:35:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6x66fs73yk"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/37d8f69a-7205-440c-ac5f-e154393a082f.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/37d8f69a-7205-440c-ac5f-e154393a082f.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/37d8f69a-7205-440c-ac5f-e154393a082f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:35:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/404414af-ea5b-45cb-9fed-89123f86eb3f.afbbdl4qs1.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/404414af-ea5b-45cb-9fed-89123f86eb3f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:41:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "afbbdl4qs1"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/404414af-ea5b-45cb-9fed-89123f86eb3f.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/404414af-ea5b-45cb-9fed-89123f86eb3f.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/404414af-ea5b-45cb-9fed-89123f86eb3f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:41:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/428a3fda-cbc3-4d54-98ee-b44cb1a3aa2a.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/428a3fda-cbc3-4d54-98ee-b44cb1a3aa2a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7042"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1gw/ibID5KxWnxlkJV6jbnQKc+/U/Oo5LAeG2pJySCQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:38:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1gw/ibID5KxWnxlkJV6jbnQKc+/U/Oo5LAeG2pJySCQ="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/428a3fda-cbc3-4d54-98ee-b44cb1a3aa2a.mgkxvezmrx.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/428a3fda-cbc3-4d54-98ee-b44cb1a3aa2a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7042"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1gw/ibID5KxWnxlkJV6jbnQKc+/U/Oo5LAeG2pJySCQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:38:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mgkxvezmrx"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/428a3fda-cbc3-4d54-98ee-b44cb1a3aa2a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1gw/ibID5KxWnxlkJV6jbnQKc+/U/Oo5LAeG2pJySCQ="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/55813af3-54c6-40fa-acaa-f52109ce7e28.afbbdl4qs1.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/55813af3-54c6-40fa-acaa-f52109ce7e28.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:40:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "afbbdl4qs1"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/55813af3-54c6-40fa-acaa-f52109ce7e28.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/55813af3-54c6-40fa-acaa-f52109ce7e28.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/55813af3-54c6-40fa-acaa-f52109ce7e28.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:40:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/5859ca6b-89c5-47bb-a240-285e0c84d200.jcjpd51o2s.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/5859ca6b-89c5-47bb-a240-285e0c84d200.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zWC0feroFPLfwkxwKoLrlFOTYsaL7J5bGl5Y8LccaBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:41:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jcjpd51o2s"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/5859ca6b-89c5-47bb-a240-285e0c84d200.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zWC0feroFPLfwkxwKoLrlFOTYsaL7J5bGl5Y8LccaBg="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/5859ca6b-89c5-47bb-a240-285e0c84d200.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/5859ca6b-89c5-47bb-a240-285e0c84d200.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zWC0feroFPLfwkxwKoLrlFOTYsaL7J5bGl5Y8LccaBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:41:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zWC0feroFPLfwkxwKoLrlFOTYsaL7J5bGl5Y8LccaBg="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/77aac50a-fd94-4c6e-90e0-8300db1078e8.fut16zv9ry.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/77aac50a-fd94-4c6e-90e0-8300db1078e8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8048"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V68lp4GtENku5ZxDzmvYW9gfOlYJLMsB+Hix1rlA4gw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:32:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fut16zv9ry"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/77aac50a-fd94-4c6e-90e0-8300db1078e8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V68lp4GtENku5ZxDzmvYW9gfOlYJLMsB+Hix1rlA4gw="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/77aac50a-fd94-4c6e-90e0-8300db1078e8.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/77aac50a-fd94-4c6e-90e0-8300db1078e8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8048"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V68lp4GtENku5ZxDzmvYW9gfOlYJLMsB+Hix1rlA4gw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:32:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V68lp4GtENku5ZxDzmvYW9gfOlYJLMsB+Hix1rlA4gw="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/7e1f1613-d2ee-45a4-b96b-d09d8658ceda.arp987lwle.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/7e1f1613-d2ee-45a4-b96b-d09d8658ceda.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14445"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WkGwO++RJLKtdyDoGDcIqcBjf7RznhgWIM+GfY5yhBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:30:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "arp987lwle"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/7e1f1613-d2ee-45a4-b96b-d09d8658ceda.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WkGwO++RJLKtdyDoGDcIqcBjf7RznhgWIM+GfY5yhBE="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/7e1f1613-d2ee-45a4-b96b-d09d8658ceda.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/7e1f1613-d2ee-45a4-b96b-d09d8658ceda.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14445"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WkGwO++RJLKtdyDoGDcIqcBjf7RznhgWIM+GfY5yhBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:30:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WkGwO++RJLKtdyDoGDcIqcBjf7RznhgWIM+GfY5yhBE="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/80b0d8be-53a6-467c-85be-0f95965c17ef.fut16zv9ry.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/80b0d8be-53a6-467c-85be-0f95965c17ef.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8048"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V68lp4GtENku5ZxDzmvYW9gfOlYJLMsB+Hix1rlA4gw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:38:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fut16zv9ry"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/80b0d8be-53a6-467c-85be-0f95965c17ef.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V68lp4GtENku5ZxDzmvYW9gfOlYJLMsB+Hix1rlA4gw="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/80b0d8be-53a6-467c-85be-0f95965c17ef.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/80b0d8be-53a6-467c-85be-0f95965c17ef.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8048"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V68lp4GtENku5ZxDzmvYW9gfOlYJLMsB+Hix1rlA4gw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:38:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V68lp4GtENku5ZxDzmvYW9gfOlYJLMsB+Hix1rlA4gw="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/86078131-8250-4333-a80a-c578774b0969.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/86078131-8250-4333-a80a-c578774b0969.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18996"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IOxnOvqH562Beklhi1gDghEjD1aLixAyLaE1xrWXIgg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:38:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IOxnOvqH562Beklhi1gDghEjD1aLixAyLaE1xrWXIgg="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/86078131-8250-4333-a80a-c578774b0969.s5thmwxg23.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/86078131-8250-4333-a80a-c578774b0969.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18996"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IOxnOvqH562Beklhi1gDghEjD1aLixAyLaE1xrWXIgg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:38:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s5thmwxg23"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/86078131-8250-4333-a80a-c578774b0969.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IOxnOvqH562Beklhi1gDghEjD1aLixAyLaE1xrWXIgg="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/8c1f4684-9547-47f9-a510-aa71bea10748.pio9rm3610.webp",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/8c1f4684-9547-47f9-a510-aa71bea10748.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7690"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n1jXwyHA2Eb15Q+90UtTL9dl+5XTv+KORUizxutfc7Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:32:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pio9rm3610"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/8c1f4684-9547-47f9-a510-aa71bea10748.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-n1jXwyHA2Eb15Q+90UtTL9dl+5XTv+KORUizxutfc7Q="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/8c1f4684-9547-47f9-a510-aa71bea10748.webp",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/8c1f4684-9547-47f9-a510-aa71bea10748.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7690"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n1jXwyHA2Eb15Q+90UtTL9dl+5XTv+KORUizxutfc7Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:32:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-n1jXwyHA2Eb15Q+90UtTL9dl+5XTv+KORUizxutfc7Q="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/9211a56d-a39c-451f-9a62-8443b137e4b5.jcjpd51o2s.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/9211a56d-a39c-451f-9a62-8443b137e4b5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zWC0feroFPLfwkxwKoLrlFOTYsaL7J5bGl5Y8LccaBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:35:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jcjpd51o2s"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/9211a56d-a39c-451f-9a62-8443b137e4b5.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zWC0feroFPLfwkxwKoLrlFOTYsaL7J5bGl5Y8LccaBg="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/9211a56d-a39c-451f-9a62-8443b137e4b5.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/9211a56d-a39c-451f-9a62-8443b137e4b5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zWC0feroFPLfwkxwKoLrlFOTYsaL7J5bGl5Y8LccaBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:35:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zWC0feroFPLfwkxwKoLrlFOTYsaL7J5bGl5Y8LccaBg="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/937e1318-d1e2-404a-bc5c-265eaabe4052.d4912lk64h.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/937e1318-d1e2-404a-bc5c-265eaabe4052.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k6VBR1grXK7f4M4uPCGtKwdouLgLFwgBn8c4XpEkd8E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:40:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d4912lk64h"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/937e1318-d1e2-404a-bc5c-265eaabe4052.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k6VBR1grXK7f4M4uPCGtKwdouLgLFwgBn8c4XpEkd8E="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/937e1318-d1e2-404a-bc5c-265eaabe4052.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/937e1318-d1e2-404a-bc5c-265eaabe4052.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k6VBR1grXK7f4M4uPCGtKwdouLgLFwgBn8c4XpEkd8E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:40:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k6VBR1grXK7f4M4uPCGtKwdouLgLFwgBn8c4XpEkd8E="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/942ad77b-123d-4faf-a0d1-b4b8d11aff04.gnd8nx3ag3.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/942ad77b-123d-4faf-a0d1-b4b8d11aff04.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HEJqabrqxpMRNF/OEe206MY3mvwdjfR9xmSRe5ZH2Hs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:41:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gnd8nx3ag3"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/942ad77b-123d-4faf-a0d1-b4b8d11aff04.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HEJqabrqxpMRNF/OEe206MY3mvwdjfR9xmSRe5ZH2Hs="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/942ad77b-123d-4faf-a0d1-b4b8d11aff04.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/942ad77b-123d-4faf-a0d1-b4b8d11aff04.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HEJqabrqxpMRNF/OEe206MY3mvwdjfR9xmSRe5ZH2Hs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:41:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HEJqabrqxpMRNF/OEe206MY3mvwdjfR9xmSRe5ZH2Hs="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/a5a954cf-2590-4ad0-a5d6-dc7ce8356e0b.0nkguxayd9.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/a5a954cf-2590-4ad0-a5d6-dc7ce8356e0b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:30:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0nkguxayd9"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/a5a954cf-2590-4ad0-a5d6-dc7ce8356e0b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/a5a954cf-2590-4ad0-a5d6-dc7ce8356e0b.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/a5a954cf-2590-4ad0-a5d6-dc7ce8356e0b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:30:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/aa73e56d-303e-48ae-973d-95e551b54822.gicrpzoekn.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/aa73e56d-303e-48ae-973d-95e551b54822.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11651"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GJ3ZC4ngIMxjxEbrQhvDZbg/mrN1HQPyewikV5IwaG0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:32:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gicrpzoekn"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/aa73e56d-303e-48ae-973d-95e551b54822.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GJ3ZC4ngIMxjxEbrQhvDZbg/mrN1HQPyewikV5IwaG0="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/aa73e56d-303e-48ae-973d-95e551b54822.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/aa73e56d-303e-48ae-973d-95e551b54822.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11651"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GJ3ZC4ngIMxjxEbrQhvDZbg/mrN1HQPyewikV5IwaG0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:32:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GJ3ZC4ngIMxjxEbrQhvDZbg/mrN1HQPyewikV5IwaG0="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/b4e991f2-e3e7-4707-a329-f078c4505989.cv1ho448w2.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/b4e991f2-e3e7-4707-a329-f078c4505989.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13063"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SPR72a5n6CWeXvqzvlG11ryRUj5AZBDizQuagz69CaI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:37:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cv1ho448w2"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/b4e991f2-e3e7-4707-a329-f078c4505989.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SPR72a5n6CWeXvqzvlG11ryRUj5AZBDizQuagz69CaI="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/b4e991f2-e3e7-4707-a329-f078c4505989.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/b4e991f2-e3e7-4707-a329-f078c4505989.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13063"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SPR72a5n6CWeXvqzvlG11ryRUj5AZBDizQuagz69CaI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:37:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SPR72a5n6CWeXvqzvlG11ryRUj5AZBDizQuagz69CaI="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/d185ff78-f96a-45f3-9850-c5fe253ca5ef.jk70eutqda.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/d185ff78-f96a-45f3-9850-c5fe253ca5ef.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"U3xisroVgSFkO5Sgb4YciKPs8ga+5PJKqZtVTGoX8oQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:41:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jk70eutqda"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/d185ff78-f96a-45f3-9850-c5fe253ca5ef.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-U3xisroVgSFkO5Sgb4YciKPs8ga+5PJKqZtVTGoX8oQ="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/d185ff78-f96a-45f3-9850-c5fe253ca5ef.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/d185ff78-f96a-45f3-9850-c5fe253ca5ef.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"U3xisroVgSFkO5Sgb4YciKPs8ga+5PJKqZtVTGoX8oQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:41:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-U3xisroVgSFkO5Sgb4YciKPs8ga+5PJKqZtVTGoX8oQ="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/df2b4b33-9088-44f9-a9ed-2029e28410e7.afbbdl4qs1.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/df2b4b33-9088-44f9-a9ed-2029e28410e7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:30:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "afbbdl4qs1"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/df2b4b33-9088-44f9-a9ed-2029e28410e7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/df2b4b33-9088-44f9-a9ed-2029e28410e7.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/df2b4b33-9088-44f9-a9ed-2029e28410e7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:30:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/e57792e8-ea51-471d-9144-15a846d32ee2.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/e57792e8-ea51-471d-9144-15a846d32ee2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ipc1e3De5BVzGHgrpK7pijW9Q2/iVt3RBLa1v8iVE4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:30:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ipc1e3De5BVzGHgrpK7pijW9Q2/iVt3RBLa1v8iVE4E="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/e57792e8-ea51-471d-9144-15a846d32ee2.qc85ad4o9b.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/e57792e8-ea51-471d-9144-15a846d32ee2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ipc1e3De5BVzGHgrpK7pijW9Q2/iVt3RBLa1v8iVE4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:30:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qc85ad4o9b"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/e57792e8-ea51-471d-9144-15a846d32ee2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ipc1e3De5BVzGHgrpK7pijW9Q2/iVt3RBLa1v8iVE4E="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/ec01735d-9903-4d64-8b9f-dd34fec68eb8.afbbdl4qs1.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/ec01735d-9903-4d64-8b9f-dd34fec68eb8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:30:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "afbbdl4qs1"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/ec01735d-9903-4d64-8b9f-dd34fec68eb8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/ec01735d-9903-4d64-8b9f-dd34fec68eb8.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/ec01735d-9903-4d64-8b9f-dd34fec68eb8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:30:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-apDMU3cmOujkjE0i7OSNlZ87y+ujfPeCapAS6bnQ9L0="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/f05d9e1a-1be3-4679-a317-fe180b5020d0.0nkguxayd9.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/f05d9e1a-1be3-4679-a317-fe180b5020d0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:30:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0nkguxayd9"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/f05d9e1a-1be3-4679-a317-fe180b5020d0.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/f05d9e1a-1be3-4679-a317-fe180b5020d0.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/f05d9e1a-1be3-4679-a317-fe180b5020d0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:30:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hBE4HzwuzBXf9oNQCNJF6OyfO7FZT92pOqGNdJgpT5M="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/f664d75b-e251-4763-957c-d1e5cda3d00d.6x66fs73yk.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/f664d75b-e251-4763-957c-d1e5cda3d00d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:32:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6x66fs73yk"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/media/products/f664d75b-e251-4763-957c-d1e5cda3d00d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/media/products/f664d75b-e251-4763-957c-d1e5cda3d00d.jpg",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/admin/media/products/f664d75b-e251-4763-957c-d1e5cda3d00d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 11:32:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ivfUrpofojwoQ9uzuwWMPWVGEQ2CGi9RahkK2hJ5Xgo="
         }
       ]
     },
@@ -253074,90 +255752,8 @@
       ]
     },
     {
-      "Route": "assets/images/slider/a1fa3283-0aaa-4cda-8c6c-e88c0722a3c9.png",
-      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/a1fa3283-0aaa-4cda-8c6c-e88c0722a3c9.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3383"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wFZ6CVfLaPtR4dJ0GC1tAqWYGjg2Dw8S5okOtLMiM0Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 16 Jul 2025 14:57:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wFZ6CVfLaPtR4dJ0GC1tAqWYGjg2Dw8S5okOtLMiM0Y="
-        }
-      ]
-    },
-    {
-      "Route": "assets/images/slider/a1fa3283-0aaa-4cda-8c6c-e88c0722a3c9.slnpbejs8h.png",
-      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/a1fa3283-0aaa-4cda-8c6c-e88c0722a3c9.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3383"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wFZ6CVfLaPtR4dJ0GC1tAqWYGjg2Dw8S5okOtLMiM0Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 16 Jul 2025 14:57:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "slnpbejs8h"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/images/slider/a1fa3283-0aaa-4cda-8c6c-e88c0722a3c9.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wFZ6CVfLaPtR4dJ0GC1tAqWYGjg2Dw8S5okOtLMiM0Y="
-        }
-      ]
-    },
-    {
-      "Route": "assets/images/slider/b8ba3469-fd67-4b0d-9d32-959740e5bf35.2cu2un1xia.png",
-      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/b8ba3469-fd67-4b0d-9d32-959740e5bf35.png",
+      "Route": "assets/images/slider/26a8760a-be2d-4aa8-9cc0-07c1af475dad.2cu2un1xia.png",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/26a8760a-be2d-4aa8-9cc0-07c1af475dad.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -253178,7 +255774,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Jul 2025 16:42:35 GMT"
+          "Value": "Sun, 03 Aug 2025 18:09:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -253192,7 +255788,7 @@
         },
         {
           "Name": "label",
-          "Value": "assets/images/slider/b8ba3469-fd67-4b0d-9d32-959740e5bf35.png"
+          "Value": "assets/images/slider/26a8760a-be2d-4aa8-9cc0-07c1af475dad.png"
         },
         {
           "Name": "integrity",
@@ -253201,8 +255797,8 @@
       ]
     },
     {
-      "Route": "assets/images/slider/b8ba3469-fd67-4b0d-9d32-959740e5bf35.png",
-      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/b8ba3469-fd67-4b0d-9d32-959740e5bf35.png",
+      "Route": "assets/images/slider/26a8760a-be2d-4aa8-9cc0-07c1af475dad.png",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/26a8760a-be2d-4aa8-9cc0-07c1af475dad.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -253223,7 +255819,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Jul 2025 16:42:35 GMT"
+          "Value": "Sun, 03 Aug 2025 18:09:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -253398,6 +255994,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-q1IuSg2M6B6qk5M9xQm9JnxL9J1bnc5CQvQ5qdXRnVY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/slider/f3e39a96-8ee1-44d3-b7e1-69c448e393bc.9czr9fgfw0.png",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/f3e39a96-8ee1-44d3-b7e1-69c448e393bc.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127382"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qfBQ0PDbeoh0bzsNhETgIvcnQ99KzLVCz1N12chQg8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 03 Aug 2025 18:10:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9czr9fgfw0"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/slider/f3e39a96-8ee1-44d3-b7e1-69c448e393bc.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qfBQ0PDbeoh0bzsNhETgIvcnQ99KzLVCz1N12chQg8M="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/slider/f3e39a96-8ee1-44d3-b7e1-69c448e393bc.png",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/images/slider/f3e39a96-8ee1-44d3-b7e1-69c448e393bc.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127382"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qfBQ0PDbeoh0bzsNhETgIvcnQ99KzLVCz1N12chQg8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 03 Aug 2025 18:10:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qfBQ0PDbeoh0bzsNhETgIvcnQ99KzLVCz1N12chQg8M="
         }
       ]
     },
@@ -258487,12 +261165,12 @@
     },
     {
       "Route": "assets/js/main.js",
-      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/1zv6y05z13-q8txmrcc3s.gz",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/1zv6y05z13-te82ts8isz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000200040008"
+          "Quality": "0.000199760288"
         }
       ],
       "ResponseHeaders": [
@@ -258502,15 +261180,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4998"
+          "Value": "5005"
         },
         {
           "Name": "ETag",
-          "Value": "\"wIS7D5W28jxei5ovDYPx8chy1QXzDosv76uC+BkhdwE=\""
+          "Value": "\"tWvufWuFwiURheTnQWgBhA33SHXBlf8PKxa/Lv5uLEk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Jul 2025 15:33:04 GMT"
+          "Value": "Sun, 03 Aug 2025 17:55:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -258530,13 +261208,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SvQtkd/NQ5l5wqnlUjJTFqHDTeayj2OREUUR47Uy1jA=\""
+          "Value": "W/\"6ztcLcwWOlzLhaGxCm0o4PHg5HVIOoil+4SPexGOd+4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SvQtkd/NQ5l5wqnlUjJTFqHDTeayj2OREUUR47Uy1jA="
+          "Value": "sha256-6ztcLcwWOlzLhaGxCm0o4PHg5HVIOoil+4SPexGOd+4="
         }
       ]
     },
@@ -258551,7 +261229,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29794"
+          "Value": "29795"
         },
         {
           "Name": "Content-Type",
@@ -258559,11 +261237,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SvQtkd/NQ5l5wqnlUjJTFqHDTeayj2OREUUR47Uy1jA=\""
+          "Value": "\"6ztcLcwWOlzLhaGxCm0o4PHg5HVIOoil+4SPexGOd+4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Jul 2025 15:33:04 GMT"
+          "Value": "Sun, 03 Aug 2025 17:55:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -258573,13 +261251,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SvQtkd/NQ5l5wqnlUjJTFqHDTeayj2OREUUR47Uy1jA="
+          "Value": "sha256-6ztcLcwWOlzLhaGxCm0o4PHg5HVIOoil+4SPexGOd+4="
         }
       ]
     },
     {
       "Route": "assets/js/main.js.gz",
-      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/1zv6y05z13-q8txmrcc3s.gz",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/1zv6y05z13-te82ts8isz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -258588,7 +261266,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4998"
+          "Value": "5005"
         },
         {
           "Name": "Content-Type",
@@ -258596,11 +261274,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wIS7D5W28jxei5ovDYPx8chy1QXzDosv76uC+BkhdwE=\""
+          "Value": "\"tWvufWuFwiURheTnQWgBhA33SHXBlf8PKxa/Lv5uLEk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Jul 2025 15:33:04 GMT"
+          "Value": "Sun, 03 Aug 2025 17:55:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -258618,18 +261296,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wIS7D5W28jxei5ovDYPx8chy1QXzDosv76uC+BkhdwE="
+          "Value": "sha256-tWvufWuFwiURheTnQWgBhA33SHXBlf8PKxa/Lv5uLEk="
         }
       ]
     },
     {
-      "Route": "assets/js/main.q8txmrcc3s.js",
-      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/1zv6y05z13-q8txmrcc3s.gz",
+      "Route": "assets/js/main.te82ts8isz.js",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/1zv6y05z13-te82ts8isz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000200040008"
+          "Quality": "0.000199760288"
         }
       ],
       "ResponseHeaders": [
@@ -258639,15 +261317,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4998"
+          "Value": "5005"
         },
         {
           "Name": "ETag",
-          "Value": "\"wIS7D5W28jxei5ovDYPx8chy1QXzDosv76uC+BkhdwE=\""
+          "Value": "\"tWvufWuFwiURheTnQWgBhA33SHXBlf8PKxa/Lv5uLEk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Jul 2025 15:33:04 GMT"
+          "Value": "Sun, 03 Aug 2025 17:55:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -258667,13 +261345,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SvQtkd/NQ5l5wqnlUjJTFqHDTeayj2OREUUR47Uy1jA=\""
+          "Value": "W/\"6ztcLcwWOlzLhaGxCm0o4PHg5HVIOoil+4SPexGOd+4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "q8txmrcc3s"
+          "Value": "te82ts8isz"
         },
         {
           "Name": "label",
@@ -258681,12 +261359,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SvQtkd/NQ5l5wqnlUjJTFqHDTeayj2OREUUR47Uy1jA="
+          "Value": "sha256-6ztcLcwWOlzLhaGxCm0o4PHg5HVIOoil+4SPexGOd+4="
         }
       ]
     },
     {
-      "Route": "assets/js/main.q8txmrcc3s.js",
+      "Route": "assets/js/main.te82ts8isz.js",
       "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/js/main.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -258696,7 +261374,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29794"
+          "Value": "29795"
         },
         {
           "Name": "Content-Type",
@@ -258704,11 +261382,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SvQtkd/NQ5l5wqnlUjJTFqHDTeayj2OREUUR47Uy1jA=\""
+          "Value": "\"6ztcLcwWOlzLhaGxCm0o4PHg5HVIOoil+4SPexGOd+4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Jul 2025 15:33:04 GMT"
+          "Value": "Sun, 03 Aug 2025 17:55:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -258718,7 +261396,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "q8txmrcc3s"
+          "Value": "te82ts8isz"
         },
         {
           "Name": "label",
@@ -258726,13 +261404,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SvQtkd/NQ5l5wqnlUjJTFqHDTeayj2OREUUR47Uy1jA="
+          "Value": "sha256-6ztcLcwWOlzLhaGxCm0o4PHg5HVIOoil+4SPexGOd+4="
         }
       ]
     },
     {
-      "Route": "assets/js/main.q8txmrcc3s.js.gz",
-      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/1zv6y05z13-q8txmrcc3s.gz",
+      "Route": "assets/js/main.te82ts8isz.js.gz",
+      "AssetFile": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/1zv6y05z13-te82ts8isz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -258741,7 +261419,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4998"
+          "Value": "5005"
         },
         {
           "Name": "Content-Type",
@@ -258749,11 +261427,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wIS7D5W28jxei5ovDYPx8chy1QXzDosv76uC+BkhdwE=\""
+          "Value": "\"tWvufWuFwiURheTnQWgBhA33SHXBlf8PKxa/Lv5uLEk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Jul 2025 15:33:04 GMT"
+          "Value": "Sun, 03 Aug 2025 17:55:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -258771,7 +261449,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "q8txmrcc3s"
+          "Value": "te82ts8isz"
         },
         {
           "Name": "label",
@@ -258779,7 +261457,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wIS7D5W28jxei5ovDYPx8chy1QXzDosv76uC+BkhdwE="
+          "Value": "sha256-tWvufWuFwiURheTnQWgBhA33SHXBlf8PKxa/Lv5uLEk="
         }
       ]
     },

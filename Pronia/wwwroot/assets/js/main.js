@@ -3,7 +3,7 @@
 
     /*----------------------------------------*/
     /*  Preloader  
-/*----------------------------------------*/
+/*------|----------------------------------*/
     var windows = $(window);
     windows.on('load', function () {
         $('.preloader-activate').removeClass('preloader-active');
