@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pronia.Context;
@@ -6,6 +7,8 @@ using Pronia.Models;
 namespace Pronia.Areas.Manage.Controllers;
 
         [Area("Manage")]
+    [Authorize]
+    [AutoValidateAntiforgeryToken]
     public class SettingController(AppDbContext context) : Controller
     {
         

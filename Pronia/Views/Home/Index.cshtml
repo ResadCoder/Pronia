@@ -6,7 +6,7 @@
         <!-- Main Slider -->
         <div class="swiper-container main-slider swiper-arrow with-bg_white">
           <div class="swiper-wrapper">
-            @foreach (Slide slide in Model.Slides)
+           @foreach (Slide slide in Model.Slides)
             {
               <div class="swiper-slide animation-style-01">
                 <div class="slide-inner style-1 bg-height"
@@ -23,13 +23,13 @@
                           <div class="btn-wrap">
                             <a
                               class="btn btn-custom-size xl-size btn-pronia-primary"
-                               asp-controller="Product" asp-action="Details">Discover now</a>
+                               asp-controller="Shop" asp-action="Index">Discover now</a>
                           </div>
                         </div>
                       </div>
                       <div
                         class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 order-1 order-lg-2">
-                        <div class="inner-img">
+                        <div class="i nner-img">
                           <div class="scene fill">
                             <div class="expand-width" data-depth="0.2">
                               <img
@@ -119,81 +119,72 @@
                   <div class="product-item-wrap row">
                     @foreach (var product in Model.Products)
                     {
-                        <div class="col-xl-3 col-md-4 col-sm-6">
+                      <div class="col-xl-3 col-md-4 col-sm-6">
                           <div class="product-item">
-                            <div class="product-img">
-                              <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id">
-                                <img
-                                  class="primary-img"
-                                  src="~/admin/media/products//@product.Images?.FirstOrDefault(pi => pi.PositionEnum == ImagePositionEnum.main)?.ImgPath"
-                                  alt="Product Images"/>
-                                <img
-                                  class="secondary-img"
-                                  src="~/admin/media/products//@product.Images?.FirstOrDefault(pi => pi.PositionEnum == ImagePositionEnum.hover)?.ImgPath"
-                                  alt="Product Images"/>
-                              </a>
-                              <div class="product-add-action">
-                                <ul>
-                                  <li>
-                                    <a
-                                      href="wishlist.html"
-                                      data-tippy="Add to wishlist"
-                                      data-tippy-inertia="true"
-                                      data-tippy-animation="shift-away"
-                                      data-tippy-delay="50"
-                                      data-tippy-arrow="true"
-                                      data-tippy-theme="sharpborder">
-                                      <i class="pe-7s-like"></i>
-                                    </a>
-                                  </li>
-                                  <li
-                                    class="quuickview-btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#quickModal">
-                                    <a
-                                      href="#"
-                                      data-tippy="Quickview"
-                                      data-tippy-inertia="true"
-                                      data-tippy-animation="shift-away"
-                                      data-tippy-delay="50"
-                                      data-tippy-arrow="true"
-                                      data-tippy-theme="sharpborder">
-                                      <i class="pe-7s-look"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="cart.html"
-                                      data-tippy="Add to cart"
-                                      data-tippy-inertia="true"
-                                      data-tippy-animation="shift-away"
-                                      data-tippy-delay="50"
-                                      data-tippy-arrow="true"
-                                      data-tippy-theme="sharpborder">
-                                      <i class="pe-7s-cart"></i>
-                                    </a>
-                                  </li>
-                                </ul>
+                              <div class="product-img">
+                                  <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id">
+                                      <img
+                                          class="primary-img"
+                                          src="~/admin/media/products/@product.Images?.FirstOrDefault(pi => pi.PositionEnum == ImagePositionEnum.main)?.ImgPath"
+                                          alt="@product.Name" />
+                                      <img
+                                          class="secondary-img"
+                                          src="~/admin/media/products/@product.Images?.FirstOrDefault(pi => pi.PositionEnum == ImagePositionEnum.hover)?.ImgPath"
+                                          alt="@product.Name" />
+                                  </a>
+                                  <div class="product-add-action">
+                                      <ul>
+                                          <li>
+                                              <a href="wishlist.html"
+                                                 data-tippy="Add to wishlist"
+                                                 data-tippy-inertia="true"
+                                                 data-tippy-animation="shift-away"
+                                                 data-tippy-delay="50"
+                                                 data-tippy-arrow="true"
+                                                 data-tippy-theme="sharpborder">
+                                                  <i class="pe-7s-like"></i>
+                                              </a>
+                                          </li>
+                                          <li class="quuickview-btn" data-bs-toggle="modal" data-bs-target="#quickModal">
+                                            <a href="#"
+                                               class="quick-view"
+                                               data-id="@product.Id">
+                                              <i class="pe-7s-look"></i>
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a 
+                                              asp-controller="Basket" asp-action="Add" asp-route-productId="@product.Id"
+                                              data-tippy="Add to cart"
+                                                 data-tippy-inertia="true"
+                                                 data-tippy-animation="shift-away"
+                                                 data-tippy-delay="50"
+                                                 data-tippy-arrow="true"
+                                                 data-tippy-theme="sharpborder">
+                                                  <i class="pe-7s-cart"></i>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
                               </div>
-                            </div>
-                            <div class="product-content">
-                              <a class="product-name" asp-controller="Product" asp-action="Details" asp-route-id="@product.Id" >@product.Name</a>
-                              <div class="price-box pb-1">
-                                <span class="new-price">$ @product.Price</span>
+                              <div class="product-content">
+                                  <a class="product-name" asp-controller="Product" asp-action="Details" asp-route-id="@product.Id">@product.Name</a>
+                                  <div class="price-box pb-1">
+                                      <span class="new-price">$ @product.Price</span>
+                                  </div>
+                                  <div class="rating-box">
+                                      <ul>
+                                          <li><i class="fa fa-star"></i></li>
+                                          <li><i class="fa fa-star"></i></li>
+                                          <li><i class="fa fa-star"></i></li>
+                                          <li><i class="fa fa-star"></i></li>
+                                          <li><i class="fa fa-star"></i></li>
+                                      </ul>
+                                  </div>
                               </div>
-                              <div class="rating-box">
-                                <ul>
-                                  <li><i class="fa fa-star"></i></li>
-                                  <li><i class="fa fa-star"></i></li>
-                                  <li><i class="fa fa-star"></i></li>
-                                  <li><i class="fa fa-star"></i></li>
-                                  <li><i class="fa fa-star"></i></li>
-                                </ul>
-                              </div>
-                            </div>
                           </div>
-                        </div>
-                    }
+                      </div>
+                  }
                   </div>
                 </div>
               </div>

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pronia.Areas.Manage.ViewModels.Size;
@@ -5,19 +6,14 @@ using Pronia.Context;
 using Pronia.Models;
 
 namespace Pronia.Areas.Manage.Controllers;
-[Area("Manage")]
-public class SizeController : Controller
+    [Area("Manage")]
+    [Authorize]
+    [AutoValidateAntiforgeryToken]
+public class SizeController(AppDbContext context) : Controller
 {
-    private readonly AppDbContext _context;
-
-    public SizeController(AppDbContext context)
-    {
-        _context = context;
-    }
-    // GET
     public async Task<IActionResult> Index()
     {
-        List<Size> size = await _context.Sizes.ToListAsync();
+        List<Size> size = await context.Sizes.ToListAsync();
         return View(size);
     }
 
@@ -37,7 +33,7 @@ public class SizeController : Controller
             vm.Name = char.ToUpper(vm.Name[0]) + vm.Name.Substring(1).ToLower();
         }
         
-        if (await _context.Sizes.AnyAsync(c => c.Name.Trim().ToLower() == vm.Name.Trim().ToLower()))
+        if (await context.Sizes.AnyAsync(c => c.Name.Trim().ToLower() == vm.Name.Trim().ToLower()))
         {
             ModelState.AddModelError(nameof(vm.Name), "Size already exists");
             return View();
@@ -47,15 +43,15 @@ public class SizeController : Controller
         {
             Name = vm.Name
         };
-        await _context.Sizes.AddAsync(size);
-        await _context.SaveChangesAsync();
+        await context.Sizes.AddAsync(size);
+        await context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }
 
     public async Task<IActionResult> Update(int id)
     {
         if(id<=0)return BadRequest();
-        Size size = await _context.Sizes.FirstOrDefaultAsync(s => s.Id == id);
+        Size size = await context.Sizes.FirstOrDefaultAsync(s => s.Id == id);
         if (size == null) return NotFound();
 
         SizeUpdateVM vm = new SizeUpdateVM()
@@ -73,7 +69,7 @@ public class SizeController : Controller
         
         if(!ModelState.IsValid) return View(vm);
         
-        Size? size = await _context.Sizes.FirstOrDefaultAsync(s => s.Id == id);
+        Size? size = await context.Sizes.FirstOrDefaultAsync(s => s.Id == id);
         
         if (size == null) return NotFound();
         
@@ -85,13 +81,13 @@ public class SizeController : Controller
 
         if (!string.Equals(vm.Name, size.Name, StringComparison.OrdinalIgnoreCase))
         {
-            if (await _context.Sizes.AnyAsync(c => c.Name.Trim().ToLower() == vm.Name.Trim().ToLower()))
+            if (await context.Sizes.AnyAsync(c => c.Name.Trim().ToLower() == vm.Name.Trim().ToLower()))
             {
                 ModelState.AddModelError(nameof(vm.Name), "Size already exists");
                 return View();
             }
             size.Name = vm.Name;
-            await _context.SaveChangesAsync();
+            await context.SaveChangesAsync();
             TempData["Success"] = "Size updated successfully";
         }
         return RedirectToAction(nameof(Index));
@@ -99,10 +95,10 @@ public class SizeController : Controller
     public async Task<IActionResult> Delete(int id)
     {
         if (id<=0) return  BadRequest();
-        Size? size = await _context.Sizes.FirstOrDefaultAsync(c => c.Id == id);
+        Size? size = await context.Sizes.FirstOrDefaultAsync(c => c.Id == id);
         if (size == null) return NotFound();
-        _context.Sizes.Remove(size);
-        await _context.SaveChangesAsync();
+        context.Sizes.Remove(size);
+        await context.SaveChangesAsync();
         TempData["Success"] = "Size deleted successfully";
         return RedirectToAction(nameof(Index));
     }

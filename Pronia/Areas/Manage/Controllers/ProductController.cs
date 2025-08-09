@@ -12,20 +12,15 @@ using Pronia.Utilities;
 
 namespace Pronia.Areas.Manage.Controllers;
 
-[Area("Manage")]
-public class ProductController : Controller
+    [Area("Manage")]
+    [Authorize]
+    [AutoValidateAntiforgeryToken]
+public class ProductController(AppDbContext context, IWebHostEnvironment webHostEnvironment)
+    : Controller
 {
-    private readonly AppDbContext _context ;
-    private readonly IWebHostEnvironment _webHostEnvironment;
-    
-    public ProductController(AppDbContext context, IWebHostEnvironment webHostEnvironment)
-    {
-        _context = context;
-        _webHostEnvironment = webHostEnvironment;
-    }
     public async Task<IActionResult> Index()
     {
-        List<ProductIndexVM> products = await _context.Products
+        List<ProductIndexVM> products = await context.Products
             .Select(p => new ProductIndexVM
             {
                 Id = p.Id,
@@ -44,9 +39,9 @@ public class ProductController : Controller
         
         ProductCreateVM vm = new ProductCreateVM()
         {
-           Categories = await _context.Categories.ToListAsync(),
-           Sizes = await _context.Sizes.ToListAsync(),
-           Colors = await _context.Colors.ToListAsync(),
+           Categories = await context.Categories.ToListAsync(),
+           Sizes = await context.Sizes.ToListAsync(),
+           Colors = await context.Colors.ToListAsync(),
         };
         
         return View(vm);
@@ -57,46 +52,46 @@ public class ProductController : Controller
     {
         if (!ModelState.IsValid)
         { 
-            vm.Colors = await _context.Colors.ToListAsync();
-            vm.Categories = await _context.Categories.ToListAsync();
-            vm.Sizes = await _context.Sizes.ToListAsync();
+            vm.Colors = await context.Colors.ToListAsync();
+            vm.Categories = await context.Categories.ToListAsync();
+            vm.Sizes = await context.Sizes.ToListAsync();
             return View(vm);
         }
 
-        if (await _context.Products.AnyAsync(p => p.Name == vm.Name))
+        if (await context.Products.AnyAsync(p => p.Name == vm.Name))
         {
-            vm.Colors = await _context.Colors.ToListAsync();
-            vm.Categories = await _context.Categories.ToListAsync();
-            vm.Sizes = await _context.Sizes.ToListAsync();
+            vm.Colors = await context.Colors.ToListAsync();
+            vm.Categories = await context.Categories.ToListAsync();
+            vm.Sizes = await context.Sizes.ToListAsync();
             ModelState.AddModelError(nameof(vm.Name), "Product with same name already exists");
         }
 
-        if (!await _context.Categories.AnyAsync(c => c.Id == vm.CategoryId))
+        if (!await context.Categories.AnyAsync(c => c.Id == vm.CategoryId))
         {
-            vm.Colors = await _context.Colors.ToListAsync();
-            vm.Categories = await _context.Categories.ToListAsync();
-            vm.Sizes = await _context.Sizes.ToListAsync();
+            vm.Colors = await context.Colors.ToListAsync();
+            vm.Categories = await context.Categories.ToListAsync();
+            vm.Sizes = await context.Sizes.ToListAsync();
             ModelState.AddModelError(nameof(vm.CategoryId), "Categories with same id already exists");
         }
 
         foreach (int colorId in vm.ColorIds)
         {
-            if (!await _context.Colors.AnyAsync(c => c.Id == colorId))
+            if (!await context.Colors.AnyAsync(c => c.Id == colorId))
             {
-                vm.Colors = await _context.Colors.ToListAsync();
-                vm.Categories = await _context.Categories.ToListAsync();
-                vm.Sizes = await _context.Sizes.ToListAsync();
+                vm.Colors = await context.Colors.ToListAsync();
+                vm.Categories = await context.Categories.ToListAsync();
+                vm.Sizes = await context.Sizes.ToListAsync();
                 ModelState.AddModelError(nameof(vm.ColorIds), "Color with this id doesn't exist");
             }
         }
 
         foreach (var sizeId in vm.SizeIds)
         {
-            if (!await _context.Sizes.AnyAsync(s => s.Id == sizeId))
+            if (!await context.Sizes.AnyAsync(s => s.Id == sizeId))
             {
-                vm.Colors = await _context.Colors.ToListAsync();
-                vm.Categories = await _context.Categories.ToListAsync();
-                vm.Sizes = await _context.Sizes.ToListAsync();
+                vm.Colors = await context.Colors.ToListAsync();
+                vm.Categories = await context.Categories.ToListAsync();
+                vm.Sizes = await context.Sizes.ToListAsync();
                 ModelState.AddModelError(nameof(vm.SizeIds), "Size with this id doesn't exist");
             }
         }
@@ -116,13 +111,13 @@ public class ProductController : Controller
         product.ProductImages.Add(new ProductImage
         {
             PositionEnum = ImagePositionEnum.main,
-            ImgPath = await vm.MainImage.CreateFileAsync(_webHostEnvironment.WebRootPath, "admin", "media", "products")
+            ImgPath = await vm.MainImage.CreateFileAsync(webHostEnvironment.WebRootPath, "admin", "media", "products")
         });
         
         product.ProductImages.Add(new ProductImage
         {
             PositionEnum = ImagePositionEnum.hover,
-            ImgPath =  await vm.HoverImage.CreateFileAsync(_webHostEnvironment.WebRootPath, "admin", "media", "products")
+            ImgPath =  await vm.HoverImage.CreateFileAsync(webHostEnvironment.WebRootPath, "admin", "media", "products")
         });
 
         foreach (IFormFile add in vm.AdditionalImages)
@@ -130,12 +125,12 @@ public class ProductController : Controller
              product.ProductImages.Add(new ProductImage
              {
                  PositionEnum = ImagePositionEnum.additional,
-                 ImgPath = await add.CreateFileAsync(_webHostEnvironment.WebRootPath, "admin", "media", "products")
+                 ImgPath = await add.CreateFileAsync(webHostEnvironment.WebRootPath, "admin", "media", "products")
              });
         }
         
-        await _context.Products.AddAsync(product);
-        await _context.SaveChangesAsync();
+        await context.Products.AddAsync(product);
+        await context.SaveChangesAsync();
         
         return RedirectToAction(nameof(Index)); 
     }
@@ -143,7 +138,7 @@ public class ProductController : Controller
     public async Task<IActionResult> Update(int id)
     {
         if(id<=0) return BadRequest();
-        Product? product = await _context.Products
+        Product? product = await context.Products
             .Include(p => p.ProductImages)
             .Include(p => p.Colors)
                 .ThenInclude(pc => pc.Color)
@@ -161,9 +156,9 @@ public class ProductController : Controller
             Discount = product.Discount,
             Images = product.ProductImages,
             Sku = product.SKU,
-            Colors = await _context.Colors.ToListAsync(),
-            Sizes = await _context.Sizes.ToListAsync(),
-            Categories = await _context.Categories.ToListAsync(),
+            Colors = await context.Colors.ToListAsync(),
+            Sizes = await context.Sizes.ToListAsync(),
+            Categories = await context.Categories.ToListAsync(),
             CategoryId = product.CategoryId,
             ColorIds = product.Colors.Select(c => c.ColorId).ToList(),
             SizeIds = product.Sizes.Select(s => s.SizeId).ToList(),
@@ -177,7 +172,7 @@ public class ProductController : Controller
     {
         if(id<=0) return BadRequest();
         
-        Product? product = await _context.Products
+        Product? product = await context.Products
             .Include(p => p.ProductImages)
             .Include(p => p.Colors)
                 .ThenInclude(pc => pc.Color)
@@ -195,7 +190,7 @@ public class ProductController : Controller
 
         if (!string.Equals(product.Name, vm.Name, StringComparison.InvariantCultureIgnoreCase))
         {
-            if (await _context.Products.AnyAsync(p => p.Name == vm.Name))
+            if (await context.Products.AnyAsync(p => p.Name == vm.Name))
             {
                 await GetRequiredDataAsync(vm);
                 ModelState.AddModelError(nameof(vm.Name), "Product with same name already exists");
@@ -203,7 +198,7 @@ public class ProductController : Controller
             }
         }
         
-        if (vm.CategoryId != product.CategoryId  && !await _context.Categories.AnyAsync(c => c.Id == vm.CategoryId))
+        if (vm.CategoryId != product.CategoryId  && !await context.Categories.AnyAsync(c => c.Id == vm.CategoryId))
         {
                 await GetRequiredDataAsync(vm);
                 ModelState.AddModelError(nameof(vm.CategoryId), "Category with same id doesn't exist");
@@ -214,7 +209,7 @@ public class ProductController : Controller
         {
             if (!vm.ColorIds.Contains((pc.ColorId)))
             {
-                _context.ProductColors.Remove(pc);
+                context.ProductColors.Remove(pc);
             }
         }
         // product.Colors = product.Colors.Where(pc => vm.ColorIds.Contains(pc.ColorId)).ToList();
@@ -223,7 +218,7 @@ public class ProductController : Controller
         {
             if (!product.Colors.Any(c => c.ColorId == colorId))
             {
-                if (!await _context.Colors.AnyAsync(c => c.Id == colorId))
+                if (!await context.Colors.AnyAsync(c => c.Id == colorId))
                 {
                     await GetRequiredDataAsync(vm);
                     ModelState.AddModelError(nameof(colorId), "Color with same id doesn't exist");
@@ -237,7 +232,7 @@ public class ProductController : Controller
         {
             if (!vm.SizeIds.Contains((ps.SizeId)))
             {
-                _context.ProductSizes.Remove(ps);
+                context.ProductSizes.Remove(ps);
             }
         }
         
@@ -245,7 +240,7 @@ public class ProductController : Controller
         {
             if (!product.Sizes.Any(s => s.SizeId == sizeId))
             {
-                if (!await _context.Sizes.AnyAsync(s => s.Id == sizeId))
+                if (!await context.Sizes.AnyAsync(s => s.Id == sizeId))
                 {
                     await GetRequiredDataAsync(vm);
                     ModelState.AddModelError(nameof(sizeId), "Size with same id doesn't exist");
@@ -258,16 +253,16 @@ public class ProductController : Controller
         if (vm.MainImage != null)
         {
            ProductImage mainImg = product.ProductImages.FirstOrDefault(pi => pi.PositionEnum == ImagePositionEnum.main)!;
-           mainImg.ImgPath.DeleteFile(_webHostEnvironment.WebRootPath, "admin", "media", "products");
+           mainImg.ImgPath.DeleteFile(webHostEnvironment.WebRootPath, "admin", "media", "products");
            
-           mainImg.ImgPath = await vm.MainImage.CreateFileAsync(_webHostEnvironment.WebRootPath, "admin", "media", "products");
+           mainImg.ImgPath = await vm.MainImage.CreateFileAsync(webHostEnvironment.WebRootPath, "admin", "media", "products");
         }
         
         if (vm.HoverImage != null)
         {
              ProductImage  hoverImg = product.ProductImages.FirstOrDefault(pi => pi.PositionEnum == ImagePositionEnum.hover)!;
-             hoverImg.ImgPath.DeleteFile(_webHostEnvironment.WebRootPath, "admin", "media", "products");
-             hoverImg.ImgPath = await vm.HoverImage.CreateFileAsync(_webHostEnvironment.WebRootPath, "admin", "media", "products");
+             hoverImg.ImgPath.DeleteFile(webHostEnvironment.WebRootPath, "admin", "media", "products");
+             hoverImg.ImgPath = await vm.HoverImage.CreateFileAsync(webHostEnvironment.WebRootPath, "admin", "media", "products");
         }
         
         product.Name = vm.Name;
@@ -277,23 +272,23 @@ public class ProductController : Controller
         product.SKU = vm.Sku;
         product.CategoryId = vm.CategoryId;
         
-        await _context.SaveChangesAsync();
+        await context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }
 
     public async Task<IActionResult> Delete(int id)
     {
         if(id<=0) return BadRequest();
-        Product? product = await _context.Products
+        Product? product = await context.Products
             .Include(p => p.ProductImages)
             .FirstOrDefaultAsync(p => p.Id == id);
         if(product==null) return NotFound();
         foreach (var img in product.ProductImages)
         {
-            img.ImgPath.DeleteFile(_webHostEnvironment.WebRootPath, "admin", "media", "products");
+            img.ImgPath.DeleteFile(webHostEnvironment.WebRootPath, "admin", "media", "products");
         }
-        _context.Products.Remove(product);
-        await _context.SaveChangesAsync();
+        context.Products.Remove(product);
+        await context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }
 
@@ -302,7 +297,7 @@ public class ProductController : Controller
     {
         if (id <= 0) return BadRequest();
         
-        ProductDetailsVM? vm = await _context.Products
+        ProductDetailsVM? vm = await context.Products
             .Where(p => p.Id == id)
             .Select(p => new ProductDetailsVM
             {
@@ -335,10 +330,10 @@ public class ProductController : Controller
     
     private async Task GetRequiredDataAsync(ProductUpdateVM vm)
     {
-        vm.Colors = await _context.Colors.ToListAsync();
-        vm.Categories = await _context.Categories.ToListAsync();
-        vm.Sizes = await _context.Sizes.ToListAsync();
-        vm.Images = await _context.ProductImages.ToListAsync();
+        vm.Colors = await context.Colors.ToListAsync();
+        vm.Categories = await context.Categories.ToListAsync();
+        vm.Sizes = await context.Sizes.ToListAsync();
+        vm.Images = await context.ProductImages.ToListAsync();
     }
 }
 

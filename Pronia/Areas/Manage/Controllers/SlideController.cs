@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pronia.Areas.Manage.ViewModels.Slide;
@@ -9,20 +10,15 @@ using Pronia.ViewModels.Home;
 
 namespace Pronia.Areas.Manage.Controllers;
 
-[Area("Manage")]
-public class SlideController : Controller
+
+    [Area("Manage")]
+    [Authorize]
+    [AutoValidateAntiforgeryToken]
+public class SlideController(AppDbContext context, IWebHostEnvironment environment) : Controller
 {
-    private AppDbContext _context;
-    private IWebHostEnvironment _environment;
-    public SlideController(AppDbContext context,IWebHostEnvironment environment)
-    {
-        _context = context;
-        _environment = environment;
-    }
-    
     public async Task<IActionResult> Index()
     {
-        List<Slide> slides = await _context.Slides.ToListAsync();
+        List<Slide> slides = await context.Slides.ToListAsync();
         return View(slides);
     }
 
@@ -49,7 +45,7 @@ public class SlideController : Controller
             return View();
         }
         
-        if (await _context.Slides.AnyAsync(s => s.Order == vm.Order))
+        if (await context.Slides.AnyAsync(s => s.Order == vm.Order))
         {
             ModelState.AddModelError(nameof(vm.Order), "Order already exists");
             return View();
@@ -63,13 +59,13 @@ public class SlideController : Controller
             Order = vm.Order,
             Title = vm.Title,
             Description = vm.Description,
-            ImagePath = await vm.Photo.CreateFileAsync(_environment.WebRootPath, "assets","images","slider"),
+            ImagePath = await vm.Photo.CreateFileAsync(environment.WebRootPath, "assets","images","slider"),
             Subtitle = vm.Subtitle
         };
         
-        await _context.Slides.AddAsync(slide);
+        await context.Slides.AddAsync(slide);
         
-        await _context.SaveChangesAsync();
+        await context.SaveChangesAsync();
         
         return RedirectToAction(nameof(Index));
        
@@ -79,15 +75,15 @@ public class SlideController : Controller
     {
         if (id <= 0) return BadRequest();
         
-        Slide? slide = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
+        Slide? slide = await context.Slides.FirstOrDefaultAsync(s => s.Id == id);
         
         if (slide == null) return NotFound();
         
-        slide.ImagePath.DeleteFile(_environment.WebRootPath, "assets", "images", "slider");
+        slide.ImagePath.DeleteFile(environment.WebRootPath, "assets", "images", "slider");
         
-        _context.Slides.Remove(slide);
+        context.Slides.Remove(slide);
         
-        await _context.SaveChangesAsync();
+        await context.SaveChangesAsync();
         
         return RedirectToAction(nameof(Index));
     }
@@ -96,7 +92,7 @@ public class SlideController : Controller
     public async Task<IActionResult> Update(int id)
     {
         if (id <= 0) return BadRequest();
-        Slide? slide = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
+        Slide? slide = await context.Slides.FirstOrDefaultAsync(s => s.Id == id);
         if (slide == null) return NotFound();
 
         SlideUpdateVM vm = new SlideUpdateVM()
@@ -118,7 +114,7 @@ public class SlideController : Controller
         if (id <= 0) return BadRequest();
         
         
-        Slide? slide = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
+        Slide? slide = await context.Slides.FirstOrDefaultAsync(s => s.Id == id);
         if (slide == null) return NotFound();
         vm.ImagePath = slide.ImagePath;
         if (!ModelState.IsValid) return View(vm);
@@ -144,7 +140,7 @@ public class SlideController : Controller
 
         }
         
-        if (await _context.Slides.AnyAsync(s => s.Order == vm.Order && s.Id != id))
+        if (await context.Slides.AnyAsync(s => s.Order == vm.Order && s.Id != id))
         {
             ModelState.AddModelError(nameof(vm.Order), "Order already exists");
             return View(vm);
@@ -153,8 +149,8 @@ public class SlideController : Controller
         
         if (vm.Photo != null)
         {
-            slide.ImagePath.DeleteFile(_environment.WebRootPath, "assets", "images", "slider");
-            slide.ImagePath = await vm.Photo.CreateFileAsync(_environment.WebRootPath, "assets", "images", "slider");
+            slide.ImagePath.DeleteFile(environment.WebRootPath, "assets", "images", "slider");
+            slide.ImagePath = await vm.Photo.CreateFileAsync(environment.WebRootPath, "assets", "images", "slider");
         }
 
         slide.Subtitle = vm.Subtitle;
@@ -164,7 +160,7 @@ public class SlideController : Controller
         slide.Description = vm.Description;
         
 
-        await _context.SaveChangesAsync();
+        await context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }
     

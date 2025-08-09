@@ -828,3 +828,5 @@
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/ha2bfd8ba5-y8ov0lqvf1.gz
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/1zv6y05z13-te82ts8isz.gz
+/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/obj/Debug/net9.0/compressed/pqlgvp365i-75hcaj716x.gz
+/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/bin/Debug/net9.0/Newtonsoft.Json.dll

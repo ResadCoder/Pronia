@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pronia.Areas.Manage.ViewModels.Color;
@@ -7,14 +8,14 @@ using Pronia.ViewModels;
 
 namespace Pronia.Areas.Manage.Controllers;
 
-[Area("Manage")]
+    [Area("Manage")]
+    [Authorize]
+    [AutoValidateAntiforgeryToken]
 public class ColorController(AppDbContext context) : Controller
 {
-    private readonly AppDbContext _context = context;
-
     public async Task<IActionResult> Index()
     {
-        List<Color> colors = await _context.Colors.ToListAsync();
+        List<Color> colors = await context.Colors.ToListAsync();
         return View(colors);
     }
 
@@ -35,7 +36,7 @@ public class ColorController(AppDbContext context) : Controller
             vm.Name = char.ToUpper(vm.Name[0]) + vm.Name.Substring(1).ToLower();
         }
         
-        if (await _context.Colors.AnyAsync(c => c.Name.Trim().ToLower() == vm.Name.Trim().ToLower()))
+        if (await context.Colors.AnyAsync(c => c.Name.Trim().ToLower() == vm.Name.Trim().ToLower()))
         {
             ModelState.AddModelError(nameof(vm.Name), "Color already exists");
             return View();
@@ -45,8 +46,8 @@ public class ColorController(AppDbContext context) : Controller
         {
             Name = vm.Name
         };
-        await _context.Colors.AddAsync(color);
-        await _context.SaveChangesAsync();
+        await context.Colors.AddAsync(color);
+        await context.SaveChangesAsync();
         TempData["Success"] = "Color created successfully";
         return RedirectToAction(nameof(Index));
     }
@@ -55,7 +56,7 @@ public class ColorController(AppDbContext context) : Controller
     {
         if (id <=0) return  BadRequest();
         
-        Color? color = await _context.Colors.FirstOrDefaultAsync(c => c.Id == id);
+        Color? color = await context.Colors.FirstOrDefaultAsync(c => c.Id == id);
         
         if (color == null) return NotFound();
 
@@ -72,7 +73,7 @@ public class ColorController(AppDbContext context) : Controller
     {
         if(id<=0) return  BadRequest();
         if (!ModelState.IsValid) return View();
-        Color? color = await _context.Colors.FirstOrDefaultAsync(c => c.Id == id);
+        Color? color = await context.Colors.FirstOrDefaultAsync(c => c.Id == id);
         if (color == null) return NotFound();
         
         vm.Name = (vm.Name ?? "").Trim();
@@ -83,13 +84,13 @@ public class ColorController(AppDbContext context) : Controller
         
         if (!string.Equals(vm.Name , color.Name, StringComparison.OrdinalIgnoreCase))
         {
-            if (await _context.Colors.AnyAsync(c => c.Name.ToLower() == vm.Name.ToLower()))
+            if (await context.Colors.AnyAsync(c => c.Name.ToLower() == vm.Name.ToLower()))
             {
                 ModelState.AddModelError(nameof(vm.Name), "Color already exists");
                 return View();
             }
             color.Name = vm.Name;
-            await _context.SaveChangesAsync();
+            await context.SaveChangesAsync();
             TempData["Success"] = "Color updated successfully";
         }
         return RedirectToAction(nameof(Index));
@@ -98,10 +99,10 @@ public class ColorController(AppDbContext context) : Controller
     public async Task<IActionResult> Delete(int id)
     {
         if (id<=0) return  BadRequest();
-        Color? color = await _context.Colors.FirstOrDefaultAsync(c => c.Id == id);
+        Color? color = await context.Colors.FirstOrDefaultAsync(c => c.Id == id);
         if (color == null) return NotFound();
-        _context.Colors.Remove(color);
-        await _context.SaveChangesAsync();
+        context.Colors.Remove(color);
+        await context.SaveChangesAsync();
         TempData["Success"] = "Category deleted successfully";
         return RedirectToAction(nameof(Index));
     }

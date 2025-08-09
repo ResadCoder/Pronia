@@ -4025,6 +4025,10 @@
       "PackagePath": "staticwebassets/assets/images/website-images/service.png"
     },
     {
+      "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/js/Custom.js",
+      "PackagePath": "staticwebassets/assets/js/Custom.js"
+    },
+    {
       "Id": "/Users/resadsadiqov/RiderProjects/WebApplication/Pronia/wwwroot/assets/js/main.js",
       "PackagePath": "staticwebassets/assets/js/main.js"
     },

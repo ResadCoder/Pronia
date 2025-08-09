@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pronia.Areas.Manage.ViewModels;
+using Pronia.Areas.Manage.ViewModels.Pagination;
 using Pronia.Context;
 using Pronia.Models;
 using Pronia.ViewModels;
@@ -9,18 +11,29 @@ namespace Pronia.Areas.Manage.Controllers;
 
 
     [Area("Manage")]
-    public class CategoryController : Controller
+    [Authorize]
+    [AutoValidateAntiforgeryToken]
+   
+    public class CategoryController(AppDbContext context) : Controller
     {
-        private readonly AppDbContext _context;
-        
-        public CategoryController(AppDbContext context)
+        private const int _pageTake = 10;
+        public async Task<IActionResult> Index(int page = 1)
         {
-            _context = context;
-        }
-        public async Task<IActionResult> Index()
-        {
-            List<Category> categories = await _context.Categories.ToListAsync();
-            return View(categories);
+            if (page <= 0) return NotFound();
+            int countinDb = await context.Categories.CountAsync();
+            
+            List<Category> categories = await context.Categories.ToListAsync();
+
+            PaginationVM<Category> vm = new PaginationVM<Category>
+            {
+                CurrentPage = page,
+                TotalPageSize = (int)Math.Ceiling((decimal)countinDb / _pageTake),
+                Items = await context.Categories
+                    .Skip((page-1)*_pageTake)
+                    .Take(_pageTake)
+                    .ToListAsync()
+            };
+            return View(vm);
         }
 
         public IActionResult Create()
@@ -29,6 +42,7 @@ namespace Pronia.Areas.Manage.Controllers;
         }
         
         [HttpPost]
+       
         public async Task<IActionResult> Create(CategoryCreateVM vm)
         {
             if (!ModelState.IsValid) return View();
@@ -39,7 +53,7 @@ namespace Pronia.Areas.Manage.Controllers;
                 vm.Name = char.ToUpper(vm.Name[0]) + vm.Name.Substring(1).ToLower();
             }
             
-            if (await _context.Categories.AnyAsync(c => c.Name.Trim().ToLower() == vm.Name.Trim().ToLower()))
+            if (await context.Categories.AnyAsync(c => c.Name.Trim().ToLower() == vm.Name.Trim().ToLower()))
             {
                 ModelState.AddModelError(nameof(vm.Name), "Category already exists");
                 return View();
@@ -48,8 +62,8 @@ namespace Pronia.Areas.Manage.Controllers;
             {
                 Name = vm.Name
             };
-            await _context.Categories.AddAsync(category);
-            await _context.SaveChangesAsync();
+            await context.Categories.AddAsync(category);
+            await context.SaveChangesAsync();
             TempData["Success"] = "Category created successfully";
             return RedirectToAction(nameof(Index));
         }
@@ -58,7 +72,7 @@ namespace Pronia.Areas.Manage.Controllers;
         {
             if(id<=0) return BadRequest();
             
-            Category? category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
+            Category? category = await context.Categories.FirstOrDefaultAsync(c => c.Id == id);
             
             if(category == null) return NotFound();
             
@@ -78,7 +92,7 @@ namespace Pronia.Areas.Manage.Controllers;
             
             if(id<=0) return BadRequest();
             
-            Category? category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
+            Category? category = await context.Categories.FirstOrDefaultAsync(c => c.Id == id);
             
             if(category == null) return NotFound();
             
@@ -90,13 +104,13 @@ namespace Pronia.Areas.Manage.Controllers;
 
             if (!string.Equals(vm.Name , category.Name, StringComparison.OrdinalIgnoreCase))
             {
-                if (await _context.Categories.AnyAsync(c => c.Name.ToLower() == vm.Name.ToLower()))
+                if (await context.Categories.AnyAsync(c => c.Name.ToLower() == vm.Name.ToLower()))
                 {
                    ModelState.AddModelError(nameof(vm.Name), "Category already exists");
                    return View();
                 }
                 category.Name = vm.Name;
-                await _context.SaveChangesAsync();
+                await context.SaveChangesAsync();
             }
             
             return RedirectToAction(nameof(Index));
@@ -106,12 +120,12 @@ namespace Pronia.Areas.Manage.Controllers;
         {
             if(id<=0) return BadRequest();
             
-            Category? category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
+            Category? category = await context.Categories.FirstOrDefaultAsync(c => c.Id == id);
             if(category == null) return NotFound();
             
-            _context.Categories.Remove(category);
+            context.Categories.Remove(category);
             TempData["DeleteWarn"] = "Are you sure you want to delete this category? ";
-            await _context.SaveChangesAsync();
+            await context.SaveChangesAsync();
             
             return RedirectToAction(nameof(Index));
         }

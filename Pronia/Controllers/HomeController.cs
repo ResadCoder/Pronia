@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Pronia.Context;
 using Pronia.DTO;
 using Pronia.Models;
+using Pronia.Utilities;
+using Pronia.ViewModels;
 using Pronia.ViewModels.Home;
 namespace Pronia.Controllers;
 
@@ -92,6 +94,43 @@ public class HomeController : Controller
                 
             })
             .ToListAsync();
+    }
+    [HttpGet]
+    public async Task<IActionResult> GetQuickView(int id)
+    {
+        var product = await _context.Products
+            .Include(p => p.ProductImages)
+            .Include(p => p.Colors).ThenInclude(pc => pc.Color)
+            .Include(p => p.Sizes).ThenInclude(ps => ps.Size)
+            .FirstOrDefaultAsync(p => p.Id == id);
+
+        if (product == null)
+            return NotFound();
+
+        var vm = new QuickViewProductVM
+        {
+            Id = product.Id,
+            Name = product.Name,
+            Description = product.Description,
+            Price = product.Price,
+            MainImage = product.ProductImages
+                .FirstOrDefault(pi => pi.PositionEnum == ImagePositionEnum.main)?.ImgPath ?? "",
+            Colors = product.Colors.Select(c => new ColorVM
+            {
+                Id = c.Color.Id,
+                Name = c.Color.Name
+            }).ToList(),
+            Sizes = product.Sizes.Select(s => new SizeVM
+            {
+                Id = s.Size.Id,
+                Name = s.Size.Name
+            }).ToList()
+        };
+
+        var colorCount = vm.Colors.Count;
+        var sizeCount = vm.Sizes.Count;
+        
+        return Json(vm);
     }
 }
 
