@@ -1,9 +1,7 @@
 @using Pronia.ViewModels
 @model List<BasketItemVM>
 
-@{
-    decimal total = 0;
-}
+
 
 <main class="main-content">
     <div
@@ -30,114 +28,123 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <form action="javascript:void(0)">
-                        <div class="table-content table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th class="product_remove">Remove</th>
-                                        <th class="product-thumbnail">Images</th>
-                                        <th class="cart-product-name">Product</th>
-                                        <th class="product-price">Unit Price</th>
-                                        <th class="product-quantity">Quantity</th>
-                                        <th class="product-subtotal">Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (var product in Model)
-                                    {
-                                        total += product.Subtotal;
-                                        <tr>
-                                            <td class="product_remove">
-                                                <a href="#">
-                                                    <i
-                                                        class="pe-7s-close"
-                                                        data-tippy="Remove"
-                                                        data-tippy-inertia="true"
-                                                        data-tippy-animation="shift-away"
-                                                        data-tippy-delay="50"
-                                                        data-tippy-arrow="true"
-                                                        data-tippy-theme="sharpborder"></i>
-                                                </a>
-                                            </td>
-                                            <td class="product-thumbnail">
-                                                <a href="#">
-                                                    <img
-                                                        src="~/admin/media/products/@product.MainImage"
-                                                        alt="Cart Thumbnail" />
-                                                </a>
-                                            </td>
-                                            <td class="product-name">
-                                                <a href="#">@product.ProductName</a>
-                                            </td>
-                                            <td class="product-price">
-                                                <span class="amount">$@product.Price</span>
-                                            </td>
-                                            <td class="quantity">
-                                                <div class="cart-plus-minus">
-                                                    <input
-                                                        class="cart-plus-minus-box"
-                                                        value="@product.Count"
-                                                        type="text" />
-                                                    <div class="dec qtybutton">
-                                                        <i class="fa fa-minus"></i>
-                                                    </div>
-                                                    <div class="inc qtybutton">
-                                                        <i class="fa fa-plus"></i>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="product-subtotal">
-                                                <span class="amount">$@product.Subtotal</span>
-                                            </td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="table-content table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th class="product_remove">Remove</th>
+                                <th class="product-thumbnail">Images</th>
+                                <th class="cart-product-name">Product</th>
+                                <th class="product-price">Unit Price</th>
+                                <th class="product-quantity">Quantity</th>
+                                <th class="product-subtotal">Total</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (var product in Model)
+                            {
+                                <tr>
+                                    <td class="product_remove">
+                                        <a asp-controller="Basket" asp-action="Remove" asp-route-productId="@product.ProductId">
+                                            <i
+                                                class="pe-7s-close"
+                                                data-tippy="Remove"
+                                                data-tippy-inertia="true"
+                                                data-tippy-animation="shift-away"
+                                                data-tippy-delay="50"
+                                                data-tippy-arrow="true"
+                                                data-tippy-theme="sharpborder"></i>
+                                        </a>
+                                    </td>
+                                    <td class="product-thumbnail">
+                                        <a href="#">
+                                            <img
+                                                src="~/admin/media/products/@product.MainImage"
+                                                alt="Cart Thumbnail" />
+                                        </a>
+                                    </td>
+                                    <td class="product-name">
+                                        <a href="#">@product.ProductName</a>
+                                    </td>
+                                    <td class="product-price">
+                                        <span class="amount">$@product.Price</span>
+                                    </td>
+                                    <td class="quantity">
+                                        <div class="cart-plus-minus">
+                                            <input
+                                                class="cart-plus-minus-box"
+                                                value="@product.Count"
+                                                type="text" />
+                                            <div class="dec qtybutton">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                            <div class="inc qtybutton">
+                                                <i class="fa fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-subtotal">
+                                        <span class="amount">$@product.Subtotal</span>
+                                    </td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="coupon-all">
+                                <form asp-controller="Basket" asp-action="ApplyCoupon" method="post" class="d-flex">
+                                    <input
+                                        id="coupon_code"
+                                        class="input-text"
+                                        name="code"
+                                        placeholder="Coupon code"
+                                        type="text"
+                                        value="@ViewBag.CouponCode"
+                                        />
+                                    <input
+                                        class="button mt-xxs-30"
+                                        type="submit"
+                                        value="Apply coupon" />
+                                </form>
 
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="coupon-all">
-                                    <div class="coupon">
-                                        <input
-                                            id="coupon_code"
-                                            class="input-text"
-                                            name="coupon_code"
-                                            value=""
-                                            placeholder="Coupon code"
-                                            type="text" />
-                                        <input
-                                            class="button mt-xxs-30"
-                                            name="apply_coupon"
-                                            value="Apply coupon"
-                                            type="submit" />
-                                    </div>
-                                    <div class="coupon2">
+                                <div class="coupon2">
+                                    <form asp-controller="Basket" asp-action="UpdateCart" method="post">
                                         <input
                                             class="button"
                                             name="update_cart"
                                             value="Update cart"
-                                            type="submit" />
-                                    </div>
+                                            type="submit"/>
+                                    </form>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-md-5 ml-auto">
-                                <div class="cart-page-total">
-                                    <h2>Cart totals</h2>
-                                    <ul>
-                                        <li>Total <span>$@total</span></li>
-                                    </ul>
-                                    <a href="#">Proceed to checkout</a>
-                                </div>
+                    <div class="row">
+                        <div class="col-md-5 ml-auto">
+                            <div class="cart-page-total">
+                                <h2>Cart totals</h2>
+                                <ul>
+                                    <li>Total <span>$@ViewBag.Total</span></li>
+                                </ul>
+                                <a href="#">Proceed to checkout</a>
                             </div>
                         </div>
-                    </form>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 </main>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}

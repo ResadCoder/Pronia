@@ -22,8 +22,6 @@ namespace Pronia.Areas.Manage.Controllers;
             if (page <= 0) return NotFound();
             int countinDb = await context.Categories.CountAsync();
             
-            List<Category> categories = await context.Categories.ToListAsync();
-
             PaginationVM<Category> vm = new PaginationVM<Category>
             {
                 CurrentPage = page,

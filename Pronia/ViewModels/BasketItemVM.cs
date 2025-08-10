@@ -8,4 +8,5 @@ public class BasketItemVM
      public decimal Price { get; set; }
      public string MainImage { get; set; } = null!;
      public decimal Subtotal => Price * Count;
+     
 }

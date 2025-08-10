@@ -246,6 +246,64 @@ namespace Pronia.Migrations
                     b.ToTable("Colors");
                 });
 
+            modelBuilder.Entity("Pronia.Models.Cupon", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("DiscountAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime?>("ExpiryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("MaxUsage")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsageCount")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cupons");
+                });
+
+            modelBuilder.Entity("Pronia.Models.CuponUsage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CouponId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UsedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CouponId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("CuponUsages");
+                });
+
             modelBuilder.Entity("Pronia.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -567,6 +625,25 @@ namespace Pronia.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Pronia.Models.CuponUsage", b =>
+                {
+                    b.HasOne("Pronia.Models.Cupon", "Coupon")
+                        .WithMany("Usages")
+                        .HasForeignKey("CouponId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Pronia.Models.User", "User")
+                        .WithMany("CouponUsages")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Coupon");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Pronia.Models.Product", b =>
                 {
                     b.HasOne("Pronia.Models.Category", "Category")
@@ -637,6 +714,11 @@ namespace Pronia.Migrations
                     b.Navigation("ProductColors");
                 });
 
+            modelBuilder.Entity("Pronia.Models.Cupon", b =>
+                {
+                    b.Navigation("Usages");
+                });
+
             modelBuilder.Entity("Pronia.Models.Product", b =>
                 {
                     b.Navigation("Colors");
@@ -644,6 +726,11 @@ namespace Pronia.Migrations
                     b.Navigation("ProductImages");
 
                     b.Navigation("Sizes");
+                });
+
+            modelBuilder.Entity("Pronia.Models.User", b =>
+                {
+                    b.Navigation("CouponUsages");
                 });
 #pragma warning restore 612, 618
         }
