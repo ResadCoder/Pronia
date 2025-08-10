@@ -1,0 +1,100 @@
+@model  Pronia.Areas.Manage.ViewModels.Pagination.PaginationVM<Cupon>
+@{ int count = (Model.CurrentPage-1) * 10;}
+
+<div class="col-lg-6 grid-margin stretch-card">
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Cupons</h4>
+    <a asp-controller="Cupon" asp-action="Create" class="btn btn-success">Create Category</a>
+    <div class="table-responsive"> 
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>Code</th>
+          <th>Is Valid</th>
+          <th>Discount Amount</th>
+          <th>Expiry Time</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var cupon in Model.Items)
+        {
+          count++;
+          <tr>
+            <td>
+              @count
+            </td>
+            <td>
+              @cupon.Code
+            </td>
+            <td>
+              @cupon.IsActive
+            </td>
+            <td>
+              @cupon.DiscountAmount
+            </td>
+            <td>
+              @(cupon.ExpiryDate?.ToString("dd.MM.yyyy") ?? "No expire time")
+            </td>
+            <td>
+              <a asp-controller="Cupon" asp-action="Update" asp-route-id="@cupon.Id" class="btn bg-warning"><i class="mdi mdi-pencil"></i></a>
+              <a href="javascript:void(0);" onclick="confirmDelete('@cupon.Id')" class="btn bg-danger">
+                <i class="mdi mdi-delete"></i>
+              </a>
+            </td>
+          </tr>
+        }
+        </tbody>
+      </table>
+                    
+    </div>
+  </div>
+
+  <nav aria-label="Page navigation example" class="d-flex justify-content-center align-items-center">
+    <ul class="pagination">
+      <li class="@(Model.CurrentPage ==1 ? "page-item disabled" : "page-item")">
+        <a class="page-link" asp-controller="Cupon" asp-action="Index" asp-route-page="@(Model.CurrentPage - 1)">Previous</a>
+      </li>
+      @for (int i = 1; i <= Model.TotalPageSize; i++)
+      {
+        <li class="page-item">
+          <a class="@(i == Model.CurrentPage ? "page-link active" : "page-link" )"  asp-controller="Cupon" asp-action="Index" asp-route-page="@i">@i</a>
+        </li>
+      }
+      <li class="@(Model.CurrentPage == Model.TotalPageSize ? "page-item disabled" : "page-item")">
+        <a class="page-link" asp-controller="Cupon" asp-action="Index" asp-route-page="@(Model.CurrentPage + 1)">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+@if (TempData["Success"] != null)
+{
+  <script>
+        Swal.fire({
+            text: "@TempData["Success"]",
+            icon: "success"
+        });
+    </script>
+}
+
+<script>
+    function confirmDelete(id) {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "Do you really want to delete this category?",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = '/Cupon/Delete/' + id;
+            }
+        });
+    }
+</script>
