@@ -26,7 +26,7 @@ public class Program
         builder.Services.AddScoped<AppDbContextInitializer>();
         builder.Services.AddScoped<IEmailService, EmailService>();
         builder.Services.AddScoped<IViewRenderService, ViewRenderService>();
-       
+        builder.Services.AddHttpContextAccessor();
 
         // Identity
         builder.Services.AddIdentity<User, IdentityRole<int>>(options =>

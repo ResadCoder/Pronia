@@ -2,6 +2,7 @@
 @inject LayoutService layoutService 
 @{
     Dictionary<string, string> settings = await layoutService.GetSettingsAsync();
+    List<BasketItemVM> basketItems = await layoutService.GetBasketItemsAsync();
 }
 
 <!DOCTYPE html>
@@ -46,7 +47,7 @@
 
     <div class="main-wrapper">
         <!-- Begin Main Header Area -->
-        @await Html.PartialAsync("_HeaderPartialView", settings) 
+        @await Html.PartialAsync("_HeaderPartialView", new HeaderVM{Settings = settings, BasketItems = basketItems}) 
         <!-- Main Header Area End Here -->
 
         @RenderBody()

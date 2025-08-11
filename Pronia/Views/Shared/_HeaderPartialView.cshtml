@@ -1,5 +1,5 @@
 @using Pronia.Extensions
-@model Dictionary<string,string>
+@model HeaderVM
 
 <header class="main-header-area">
     <div class="header-top bg-pronia-primary d-none d-lg-block">
@@ -45,7 +45,7 @@
                     <div class="header-middle-wrap position-relative">
                         <div class="header-contact d-none d-lg-flex">
                             <i class="pe-7s-call"></i>
-                            <a href="tel://@Model["Phone"]">@Model["Phone"]</a>
+                            <a href="tel://@Model.Settings["Phone"]">@Model.Settings["Phone"]</a>
                         </div>
                         <a href="/" class="header-logo">
                             <img src="~/assets/images/logo/dark.png" alt="Header Logo"/>
@@ -72,7 +72,7 @@
                                     </ul>
                                 </li>
                                 <li class="d-none d-lg-block"><a href="wishlist.html"><i class="pe-7s-like"></i></a></li>
-                                <li class="minicart-wrap me-3 me-lg-0"><a href="#miniCart" class="minicart-btn toolbar-btn"><i class="pe-7s-shopbag"></i><span class="quantity">3</span></a></li>
+                                <li class="minicart-wrap me-3 me-lg-0"><a href="#miniCart" class="minicart-btn toolbar-btn"><i class="pe-7s-shopbag"></i><span class="quantity">@Model.BasketItems.Count</span></a></li>
                                 <li class="mobile-menu_wrap d-block d-lg-none"><a href="#mobileMenu" class="mobile-menu_btn toolbar-btn pl-0"><i class="pe-7s-menu"></i></a></li>
                             </ul>
                         </div>
@@ -227,4 +227,6 @@
             </div>
         </div>
     </div>
+   @await Html.PartialAsync("_BasketPartialView",Model.BasketItems)
+    
 </header>

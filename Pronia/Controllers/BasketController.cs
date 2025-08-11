@@ -64,6 +64,7 @@ namespace Pronia.Controllers
 
     public async Task<IActionResult> Index(string couponCode = "" , decimal couponAmount = 0)
     {
+        decimal total = 0;
         ViewBag.CouponCode = couponCode;
         string? basketCookie = Request.Cookies["Basket"];
         if (basketCookie is null)
@@ -96,20 +97,20 @@ namespace Pronia.Controllers
                     MainImage = product.ProductImages.FirstOrDefault()!.ImgPath,
                     Price = product.Price,
                 });
+                total +=product.Price*item.Count;
             }
         }
+        
+        total -= couponAmount;
+        ViewBag.Total = total > 0 ? total : 0;
 
-        decimal total = vm.Sum(x => x.Subtotal)-couponAmount;
-        
-        ViewBag.Total = total;
-        
         return View(vm);
     }
 
     public IActionResult Remove(int productId)
     {
         string? basketCookie = Request.Cookies["Basket"];
-
+        
         if (string.IsNullOrEmpty(basketCookie))
             return RedirectToAction("Index");
 
@@ -140,7 +141,6 @@ namespace Pronia.Controllers
     }
     
     [HttpPost]
-    [Authorize]
     public async Task<IActionResult> ApplyCoupon(string code)
     {
         Cupon? coupon = await context.Cupons
